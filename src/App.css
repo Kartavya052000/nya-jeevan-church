@@ -1,38 +1,165 @@
-.App {
-  text-align: center;
+@import url(assets/css/basic.css);
+@import url(assets/css/widgets.css);
+@import url(assets/css/home.css);
+
+* {
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+  scroll-behavior: smooth;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+html, body {
+  border: none;
+  margin: 0;
+  padding: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
+  position: relative;
+  overflow-x: hidden;
+  font-family: 'Poppins';
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  color: #000 !important;
+  transition: all 0.2s ease-in;
+}
+
+ul, ol  {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a, a:active, a:visited {
+  text-decoration: none !important;
+  color: #000;
+}
+
+p {
+  margin: 0;
+}
+
+/** Header CSS **/
+
+.mainHeader {
+  position: relative;
+}
+
+.mainHeader .header_inner {
+  position: absolute;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.mainHeader .header_wrap {
   display: flex;
-  flex-direction: column;
+  display: -ms-flexbox;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 0;
+  border-bottom: solid 1px rgba(255,255,255,0.2);
+}
+
+.mainHeader .logo img {
+  max-width: 150px;
+}
+
+.navigationWrapper ul {
+  display: flex;
+  display: -ms-flexbox;
+  align-items: center;
+  gap: 10px;
+}
+
+.navigationWrapper ul li {
+  margin: 0 10px;
+}
+
+.navigationWrapper ul li:last-child {
+  margin-right: 0;
+}
+
+.navigationWrapper ul li.menu_item a, .navigationWrapper ul li.menu_item span {
+  color: #fff;
+}
+
+.navigationWrapper ul li.menu_item img {
+  width: 25px;
+  height: 25px;
+  margin-right: 2px;
+}
+
+.hamburger {
+  display: none;
+}
+
+.navigationWrapper ul li.menu_item .dropdown {
+  margin: 0;
+  position: relative;
+}
+
+.navigationWrapper ul li.menu_item span.dropdown_text {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 8px 10px;
+  color: #fff;
+  background-color: #ed3b58;
+  text-align: center;
+  display: flex;
+  display: -ms-flexbox;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  border-radius: 6px 6px 0 0;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.navigationWrapper .dropdown_menu {
+  top: 55px;
+  right: 0;
+  position: absolute;
+  width: 150px;
+  height: 0;
+  visibility: hidden;
+  opacity: 0;
+  overflow: hidden;
+  overflow-y: auto;
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 10px;
+  z-index: 999;
+  transition: all 0.3s ease;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navigationWrapper .dropdown.active .dropdown_menu {
+  visibility: visible;
+  opacity: 1;
+  height: 110px;
+  box-shadow: 0px 8px 8px 5px rgba(0,0,0,0.2);
 }
+
+.navigationWrapper .dropdown_menu ul {
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 14px;
+}
+
+.navigationWrapper .dropdown_menu ul li a {
+  text-transform: uppercase;
+  margin: 0 0 5px;
+}
+
+.navigationWrapper ul li.menu_item:not(.dropdown) .butn {
+  width: 7rem;
+  height: 2.5rem;
+}
+
+/** Header CSS Ends here **/

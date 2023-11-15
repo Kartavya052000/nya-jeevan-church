@@ -57,6 +57,7 @@ p {
   top: 0;
   left: 0;
   width: 100%;
+  background-color: rgba(0,0,0,0.4);
 }
 
 .mainHeader .header_wrap {
@@ -87,7 +88,7 @@ p {
   margin-right: 0;
 }
 
-.navigationWrapper ul li.menu_item a, .navigationWrapper ul li.menu_item span {
+.navigationWrapper ul li.menu_item a {
   color: #fff;
 }
 
@@ -163,3 +164,527 @@ p {
 }
 
 /** Header CSS Ends here **/
+
+/** Footer CSS starts here **/
+
+.footer-sec {
+  padding: 3rem 0;
+  background: linear-gradient(-90deg, #8a0123 0%, #cf2e2e 100%);
+}
+
+.footerCol-6, .footerCol-3 {
+  padding: 0 15px;
+}
+
+.footerCol-6 {
+  flex: 1 1 35%;
+  max-width: 35%;
+  margin-right: auto;
+}
+
+.footerCol-3 {
+  flex: 1 1 30%;
+  max-width: 30%;
+}
+
+.footerCol_inner h4 {
+  color: #fff;
+  font-family: 'Russo One';
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0 0 20px;
+  text-align: left;
+}
+
+.footerCol_inner p {
+  font-size: 15px;
+  line-height: 25px;
+  color: #fff;
+  font-weight: 400;
+}
+
+ul.foot_menu {
+  display: inline-block;
+}
+
+ul.foot_menu li a {
+  text-align: left;
+  text-transform: capitalize;
+  color: #fff;
+  margin: 0 0 15px;
+  padding: 0;
+  display: inline-block;
+}
+
+ul.foot_menu li a:hover {
+  color: #000;
+}
+
+.footerCol_inner ul.address li {
+  margin: 0 0 15px;
+  color: #fff;
+  font-weight: 500;
+}
+
+.footerCol_inner ul.address li a {
+  color: #fff;
+}
+
+.footerCol_inner ul.address li i {
+  margin-right: 10px;
+}
+
+.footerCol_inner ul.address li span img {
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.footerCol_inner ul.social_info {
+  margin: 20px 0;
+}
+
+ul.social_info {
+  display: flex;
+  display: -ms-flexbox;
+  align-items: center;
+  gap: 20px;
+  color: #fff;
+}
+
+ul.social_info li a {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  color: #fff;
+  display: flex;
+  display: -ms-flexbox;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease-in;
+}
+
+ul.social_info li a span {
+  position: absolute;
+  top: 30%;
+  background-color: #fff;
+  border-radius: 4px;
+  font-size: 10px;
+  font-weight: 500;
+  text-align: center;
+  width: 70px;
+  height: 20px;
+  line-height: 20px;
+  color: #cf2e2e;
+  opacity: 0;
+  visibility: hidden;
+  transition: top 0.3s ease;
+}
+
+ul.social_info li a span:after {
+  content: '';
+  position: absolute;
+  border: 5px solid #fff;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 100%);
+}
+
+ul.social_info li a img {
+  vertical-align: middle;
+}
+
+ul.social_info li a:hover {
+  box-shadow: 0px 0px 5px 5px rgba(255,255,255,0.7);
+  border-color: transparent;
+}
+
+ul.social_info li a:hover span {
+  top: -30px;
+  opacity: 1;
+  visibility: visible;
+}
+
+footer .copyright {
+  text-align: center;
+  background: linear-gradient(0deg, #8a0123 0%, #cf2e2e 100%);
+  color: #fff;
+  padding: 12px 0;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+footer .copyright a {
+  color: #fff;
+}
+
+footer .copyright img {
+  width: 15px;
+  vertical-align: middle;
+}
+
+/** Footer CSS ends here **/
+
+
+
+
+
+
+
+
+/** Responsive CSS starts here **/
+
+@media (min-width: 768px) {
+  .navigationWrapper ul li.menu_item span.dropdown_text:hover {
+    background-color: #2cb75c;
+  }
+}
+
+@media (min-width: 992px) {
+  .navigationWrapper ul li.menu_item img {
+    display: none;
+  }
+
+  .navigationWrapper ul li.menu_item .dropdown_text img {
+    display: block;
+  }
+}
+
+
+
+@media (max-width: 1199.98px) {
+  .mainHeader .header_wrap {
+      padding: 15px 0;
+  }
+
+  .mainHeader .logo img {
+      max-width: 220px;
+  }
+}
+
+@media (max-width: 991.98px) {
+
+  .navigationWrapper ul li.menu_item:not(.dropdown) .butn {
+    width: 3rem;
+    height: 2rem;
+    font-size: 0;
+  }
+
+  .innerHeaderWrap ul {
+    gap: 15px;
+  }
+  
+  .mainHeader .logo img {
+      max-width: 150px;
+  }
+
+  .navigationWrapper ul li.menu_item span.dropdown_text {
+    font-size: 0;
+    padding: 6px 8px;
+    border: 1px solid #15843C;
+  }
+
+  .navigationWrapper ul li.menu_item img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .navigationWrapper .dropdown_menu {
+    top: 40px;
+    width: 100%;
+  }
+
+  .navigationWrapper .dropdown.active .dropdown_menu {
+    height: 130px;
+  }
+
+  .navigationWrapper .dropdown_menu ul li a {
+    margin: 0;
+  }
+
+  .footerCol-3 {
+      flex: 1 1 32%;
+      max-width: 32%;
+  }
+
+  .footerCol_inner ul.address li {
+      font-size: 14px;
+  }
+
+  .footerCol_inner ul.address li i, .footerCol_inner ul.address li span img {
+      margin-right: 5px;
+  }
+
+  .footerCol_inner p {
+    font-size: 14px;
+    line-height: normal;
+  }
+}
+
+@media (max-width: 767.98px) {
+
+  .mainHeader .header_inner {
+    background-color: rgba(0,0,0,0.8);
+  }
+
+  .mainHeader .logo img {
+      max-width: 180px;
+  }
+
+  .mainHeader .header_wrap {
+      position: relative;
+  }
+
+  .navigationWrapper {
+      margin: 0;
+      position: absolute;
+      right: 0;
+      top: 70px;
+      width: 300px;
+      height: 0;
+      background-color: rgba(255,255,255,0.7);
+      box-shadow: 0px 4px 5px rgba(0,0,0,0.2);
+      z-index: 999;
+      overflow: hidden;
+      transition: all 0.3s ease;
+  }
+
+  .mainHeader.showMenu .navigationWrapper {
+      padding: 20px;
+      height: 250px;
+      overflow-y: auto;
+      border-bottom: 4px solid #8a0123;
+      border-radius: 0 0 15px 15px;
+  }
+
+  .navigationWrapper ul li.menu_item a {
+    color: #8a0123;
+  }
+
+  .navigationWrapper ul li.menu_item span.dropdown_text {
+    font-size: 12px;
+  }
+
+  .navigationWrapper ul {
+    flex-direction: column;
+  }
+
+  .hamburger {
+      display: block;
+      cursor: pointer;
+  }
+
+  .hamburger span.bar {
+      position: relative;
+      display: block;
+      width: 35px;
+  }
+
+  .hamburger span.bar:before, .hamburger span.bar:after {
+      content: '';
+      height: 3px;
+      position: absolute;
+      background: linear-gradient(-90deg, #8a0123 0%, #cf2e2e 100%);
+      transition: all 0.2s ease;
+  }
+
+  .hamburger span.bar:before {
+      top:-2px;
+      width: 35px;
+  }
+
+  .hamburger span.bar:after {
+      top: 8px;
+      width: 25px;
+  }
+
+  .showMenu .hamburger span.bar {
+      height: 0;
+  }
+
+  .showMenu .hamburger span.bar:before {
+      transform: rotate(135deg);
+      top: -5px;
+      width: 25px;
+  }
+
+  .showMenu .hamburger span.bar:after {
+      transform: rotate(-135deg);
+      top: -5px;
+  }
+
+  .navigationWrapper ul li {
+      width: 100%;
+  }
+
+  .navigationWrapper ul li.menu_item:not(.dropdown) .butn {
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    line-height: 1.5rem;
+    font-size: 13px;
+    width: 100%;
+    height: 2.5rem;
+  }
+
+  .navigationWrapper ul li.menu_item:not(.dropdown) .butn img {
+    display: none;
+  }
+
+  .innerHeaderWrap ul {
+      font-size: 13px;
+  }
+
+  .footer-sec {
+    padding: 2.5rem 0 2rem;
+  }
+
+  .footerCol_inner ul.address li {
+      margin: 0 0 10px;
+      font-size: 14px;
+  }
+
+  .footerCol_inner h4 {
+      font-size: 16px;
+      margin: 0 0 15px;
+  }
+
+  .footerCol-6 {
+      flex: 1 1 90%;
+      max-width: 90%;
+  }
+
+  .footerCol-3 {
+      flex: 1 1 50%;
+      max-width: 50%;
+  }
+}
+.error-input {
+  border: 1px solid red !important;
+}
+
+
+@media (max-width: 600px) {
+  
+  /** RS Form CSS **/
+
+  .rs-picker-daterange-panel .rs-picker-daterange-calendar-group .rs-calendar .rs-calendar-table-cell-content {
+    font-size: 12px;
+  }
+
+  .rs-picker-daterange-panel .rs-picker-daterange-calendar-group .rs-calendar {
+    height: auto;
+    min-width: auto;
+  }
+}
+
+@media (max-width: 575.98px) {
+
+  .rs-picker-daterange-panel .rs-picker-daterange-calendar-group {
+    display: flex;
+    display: -ms-flexbox;
+    flex-direction: column;
+    height: auto;
+    min-width: auto;
+  }
+
+  .rs-picker-daterange-panel .rs-picker-toolbar {
+    flex-direction: column;
+  }
+
+  .rs-picker-daterange-panel .rs-picker-daterange-calendar-group .rs-calendar .rs-calendar-table-cell-content {
+    border-radius: 4px;
+    font-size: 10px;
+    padding: 3px;
+    line-height: 25px;
+  }
+
+  .rs-picker-daterange-panel .rs-picker-daterange-calendar-group .rs-calendar {
+    height: auto;
+  }
+
+  .rs-picker-daterange-panel .rs-picker-daterange-calendar-group .rs-calendar:first-child {
+    border: none;
+    border-bottom: 1px solid var(--rs-border-primary);
+  }
+
+  .rs-picker-daterange-panel .rs-picker-toolbar .rs-btn-sm {
+    font-size: 12px;
+    line-height: 15px;
+    padding: 5px;
+  }
+
+  .mainHeader .logo img {
+      max-width: 170px;
+  }
+
+  .navigationWrapper {
+      width: 290px;
+  }
+
+  .innerHeaderWrap {
+      gap: 10px;
+  }
+
+  .innerHeaderWrap ul {
+      font-size: 12px;
+      gap: 5px;
+  }
+
+  .innerHeaderWrap ul.left_info {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .footer-sec {
+    background: linear-gradient(90deg, #8a0123 0%, #cf2e2e 100%);
+  }
+
+  .footer-sec .custom_row {
+    gap: 20px 0;
+  }
+
+  .mainHeader .header_wrap {
+      padding: 10px 0;
+  }
+
+  .mainHeader.showMenu .navigationWrapper {
+      height: 200px;
+      top: 55px;
+  }
+
+  .footerCol-6 {
+      flex: 1 1 95%;
+      max-width: 95%;
+  }
+
+  .footerCol_inner p {
+      font-size: 13px;
+  }
+}
+
+@media (max-width: 475.98px) {
+
+  .footer-sec {
+      padding: 2rem 0;
+  }
+
+  .footerCol-3 {
+      flex: 1 1 100%;
+      max-width: 100%;
+  }
+
+  .footerCol_inner ul.social_info {
+      margin: 15px 0;
+  }
+
+  footer .copyright {
+      padding: 8px 0;
+      font-size: 10px;
+  }
+}

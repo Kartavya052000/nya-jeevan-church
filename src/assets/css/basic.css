@@ -98,10 +98,67 @@
     margin-right: -15px;
   }
 
+  .custom_col-3, .custom_col-6 {
+    padding: 0 15px;
+  }
+
+  .custom_col-6 {
+    flex: 0 0 48%;
+    max-width: 48%;
+  }
+
   .leftCol, .rightCol {
     padding: 0 15px;
   }
 
+
+.sec_ttl {
+    text-align: center;
+    margin: 0 0 20px;
+}
+
+.sec_ttl h2 {
+    font-weight: 600;
+    font-size: 30px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+.sec_ttl h2 span {
+  color: #fff;
+  background-color: #ce2e2e;
+  padding-left: 10px;
+}
+
+.fancy_ttl {
+  position: relative;
+  display: inline-block;
+}
+
+.fancy_ttl:before, .fancy_ttl:after {
+  content: '';
+  position: absolute;
+  height: 10px;
+  border-bottom: 2px solid;
+  border-color: #ce2e2e;
+  top: 0;
+  width: 100px;
+}
+
+.fancy_ttl:before {
+  right: 100%;
+  margin-right: 15px;
+}
+
+.fancy_ttl:after {
+  left: 100%;
+  margin-left: 15px;
+}
+
+.fancy_ttl i {
+  color: #ce2e2e;
+}
 
   /** Form CSS **/
 

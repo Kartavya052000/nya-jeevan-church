@@ -1,5 +1,5 @@
 .hero_slider_sec {
-    min-height: 400px;
+    min-height: 90vh;
     overflow: hidden;
 }
 
@@ -8,7 +8,7 @@
 }
 
 .hero_slider_sec .slick-track {
-    height: 400px;
+    height: 90vh;
 }
 
 .hero_slider_sec .slick-slide div, .hero_slider_sec .slideItem {
@@ -18,6 +18,7 @@
 .hero_slider_sec .slideItem {
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     position: relative;
     z-index: 1;
 }
@@ -25,7 +26,7 @@
 .hero_slider_sec .slidebgOverlay {
     height: 100%;
     width: 100%;
-    background-image: linear-gradient(45deg, rgba(0,0,0,0.9), rgba(255,255,255,0.05));
+    background-image: linear-gradient(45deg, rgba(0,0,0,0.9), rgba(255,255,255,0.01));
     position: absolute;
     z-index: -1;
     height: 100%;
@@ -48,4 +49,199 @@
     font-weight: 500;
     text-transform: uppercase;
     color: #fff;
+}
+
+.volunteer_sec {
+    padding: 4rem 0;
+}
+
+.volunteer_sec .custom_row {
+    justify-content: center;
+}
+
+.voluntCard {
+    background-color: #fff;
+    padding: 50px 30px;
+    border-radius: 150px;
+    box-shadow: 0px 0px 20px #ddd;
+    margin: 20px 5px;
+    transition: all 0.2s ease;
+}
+
+.voluntCard:hover {
+    background-color: #ce2e2e;
+    box-shadow: 0px 0px 20px #ce2e2e;
+}
+
+.voluntCard .imgTop img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+
+.voluntCard h4 {
+    font-size: 18px;
+    color: #222;
+    margin: 10px 0;
+    text-align: center;
+    font-weight: 500;
+}
+
+.voluntCard:hover h4 {
+    color: #fff;
+}
+
+.voluntCard span {
+    font-size: 12px;
+    color: #ce2e2e;
+    margin: 5px 0;
+    display: block;
+    text-align: center;
+    font-weight: 400;
+}
+
+.voluntCard:hover span {
+    color: #f3f3f3;
+}
+
+.voluntCard ul.social {
+    display: flex;
+    display: -ms-flexbox;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 5px;
+    margin: 10px 0;
+    background: linear-gradient(-90deg, #8a0123 0%, #cf2e2e 100%);
+    border-radius: 50px;
+}
+
+.voluntCard:hover ul.social {
+    background: #fff;
+}
+
+.voluntCard ul.social li a {
+    color: #fff;
+    padding: 0 5px;
+}
+
+.voluntCard:hover ul.social li a {
+    color: #8a0123;
+}
+
+.voluntCard ul.social li a i {
+    transition: all 0.3s ease;
+}
+
+.voluntCard ul.social li a:hover > i {
+    transform: rotate(-30deg);
+}
+
+
+/** Counter Section CSS here **/
+
+.counter_sec {
+    padding: 4rem 0;
+    background: url(../images/donation.jpg) rgba(0,0,0,0.7);
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay;
+    background-attachment: fixed;
+}
+
+.counter_sec .custom_row {
+    justify-content: center;
+    gap: 30px;
+}
+
+.counter_sec .counterWrap {
+    margin: 0 5px;
+    text-align: center;
+    color: #fff;
+}
+
+.counter_sec .counterWrap i {
+    font-size: 40px;
+}
+
+.counter_sec .counterWrap h5 {
+    margin: 10px 0;
+    font-weight: 400;
+}
+
+.counter_sec .counterWrap .counterPercentage {
+    font-size: 25px;
+}
+
+
+/** Upcoming Events CSS **/
+
+.upcoming_sec {
+    padding: 4rem 0;
+    background: linear-gradient(-90deg, rgba(251, 115, 4, 0.302) 0%, rgba(209, 46, 46, 0.122) 100%);
+}
+
+.upcoming_sec .custom_row {
+    justify-content: center;
+}
+
+.eventCard {
+    display: flex;
+    display: -ms-flexbox;
+    gap: 20px;
+    padding: 10px;
+    border: 1px solid #cecece;
+    border-radius: 2px;
+    overflow: hidden;
+    margin: 15px 0;
+    background-color: #fff;
+}
+
+.eventCard .card_img {
+    max-width: 30%;
+    flex: 0 0 30%;
+}
+
+.eventCard .card_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.eventCard .card_body {
+    max-width: 67%;
+    flex: 0 0 67%;
+}
+
+.eventCard .card_body h3 {
+    color: #222;
+    margin: 0 0 10px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.eventCard .eventFlex {
+    display: flex;
+    display: -ms-flexbox;
+    align-items: center;
+    gap: 10px;
+    font-size: 12px;
+    margin: 0 0 10px;
+}
+
+.eventCard .eventFlex span i {
+    color: #ce2e2e;
+}
+
+.eventCard .desc {
+    font-size: 13px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.eventCard a {
+    text-transform: capitalize;
 }

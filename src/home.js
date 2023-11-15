@@ -4,6 +4,7 @@ import donation from './assets/images/donation.jpg';
 import child from './assets/images/poorchild.jpg';
 import children from './assets/images/children.jpg';
 import eventImg from './assets/images/eventimg.jpg';
+import childBw from './assets/images/child_bw.jpg';
 
 var settings = {
     dots: true,
@@ -28,6 +29,8 @@ const Home = () => {
                             <div className='custom-container'>
                                 <div className='slider_cont'>
                                     <h3>Help Us with Donate</h3>
+                                    <p>Lorem Ispum dolor sit amet</p>
+                                    <a href='#' title='Contact Us' className='butn butn_main butn_sm butn_rounded'>Contact Us</a>
                                 </div>
                             </div>
                         </div>
@@ -38,6 +41,8 @@ const Home = () => {
                             <div className='custom-container'>
                                 <div className='slider_cont'>
                                     <h3>Caring is Sharing</h3>
+                                    <p>Lorem Ispum dolor sit amet</p>
+                                    <a href='#' title='Contact Us' className='butn butn_main butn_sm butn_rounded'>Contact Us</a>
                                 </div>
                             </div>
                         </div>
@@ -48,11 +53,63 @@ const Home = () => {
                             <div className='custom-container'>
                                 <div className='slider_cont'>
                                     <h3>Give a Bit. Change a Lot</h3>
+                                    <p>Lorem Ispum dolor sit amet</p>
+                                    <a href='#' title='Contact Us' className='butn butn_main butn_sm butn_rounded'>Contact Us</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </Slider>
+            </div>
+        </section>
+
+        <section className='mission_sec'>
+            <div className='custom-container'>
+                <div className='sec_ttl'>
+                    <h2><span>Our</span> Mission</h2>
+                    <span className='fancy_ttl'>
+                        <i className='fa fa-child-reaching'></i>
+                    </span>
+                </div>
+                <div className='custom_row'>
+                    <div className='custom_col-6'>
+                        <div className='left_img'>
+                            <img src={childBw} alt='Our Mission' />
+                        </div>
+                    </div>
+                    <div className='custom_col-6'>
+                        <div className='mission_cont'>
+                            <h4>How can you help us?</h4>
+                            <div className='mis_wrap'>
+                                <div className='ic_wrap'>
+                                    <i className='fa fa-hand-holding-dollar'></i>
+                                </div>
+                                <div className='cont'>
+                                    <h5>My Title</h5>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                </div>
+                            </div>
+                            <div className='mis_wrap'>
+                                <div className='ic_wrap'>
+                                    <i className='fa fa-hand-holding-dollar'></i>
+                                </div>
+                                <div className='cont'>
+                                    <h5>My Title</h5>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                </div>
+                            </div>
+                            <div className='mis_wrap'>
+                                <div className='ic_wrap'>
+                                    <i className='fa fa-hand-holding-dollar'></i>
+                                </div>
+                                <div className='cont'>
+                                    <h5>My Title</h5>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -269,6 +326,27 @@ const Home = () => {
                             </div>
                         </div>
                     </div>
+                </div>
+                <div className='sec_btnWrap'>
+                    <a href='#' title='View All Events' className='butn butn_main butn_rounded butn_sm'>View All Events</a>
+                </div>
+            </div>
+        </section>
+
+        <section className='needHelp_sec'>
+            <div className='custom-container'>
+                <div className='needHelp_inner'>
+                    <h3>We Need Your Help</h3>
+                    <div className='cont'>
+                        Our Charity helps those who have no hope.
+                        <br /><br/>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                         Ut enim ad minim veniamLorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                         Ut enim ad minim veniam
+                    </div>
+                    <a href='#' title='Learn more' className='butn butn_main butn_rounded butn_sm'>Learn more</a>
                 </div>
             </div>
         </section>

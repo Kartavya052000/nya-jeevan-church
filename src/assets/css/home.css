@@ -1,5 +1,5 @@
 .hero_slider_sec {
-    min-height: 90vh;
+    min-height: 550px;
     overflow: hidden;
 }
 
@@ -8,7 +8,7 @@
 }
 
 .hero_slider_sec .slick-track {
-    height: 90vh;
+    height: 550px;
 }
 
 .hero_slider_sec .slick-slide div, .hero_slider_sec .slideItem {
@@ -26,7 +26,7 @@
 .hero_slider_sec .slidebgOverlay {
     height: 100%;
     width: 100%;
-    background-image: linear-gradient(45deg, rgba(0,0,0,0.9), rgba(255,255,255,0.01));
+    background-image: linear-gradient(45deg, rgba(0,0,0,0.9), rgba(10,0,0,0.5));
     position: absolute;
     z-index: -1;
     height: 100%;
@@ -39,20 +39,94 @@
     padding: 10% 0 8% 0;
     display: flex;
     display: -ms-flexbox;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
     position: relative;
     z-index: 1;
 }
 
 .hero_slider_sec .slideItem .slider_cont h3 {
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 500;
     text-transform: uppercase;
     color: #fff;
 }
 
+.hero_slider_sec .slideItem .slider_cont p {
+    color: #fff;
+    margin: 5px 0 15px;
+}
+
+/** Our Mission Section CSS **/
+
+.mission_sec {
+    padding: 4rem 0 0;
+}
+
+.mission_sec .custom_row {
+    justify-content: center;
+    align-items: center;
+    margin: 4rem 0 0;
+}
+
+.mission_sec .left_img img {
+    width: 100%;
+    display: block;
+}
+
+.mission_sec .mission_cont {
+    padding: 1rem;
+}
+
+.mission_sec .mission_cont h4 {
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0 0 20px;
+}
+
+.mission_sec .mis_wrap {
+    display: flex;
+    display: -ms-flexbox;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.mission_sec .mis_wrap .ic_wrap {
+    position: relative;
+    background-color: #ce2e2e;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+}
+
+.mission_sec .mis_wrap .ic_wrap i {
+    font-size: 25px;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.mission_sec .mission_cont .mis_wrap .cont h5 {
+    margin: 0 0 10px;
+    color: #ce2e2e;
+}
+
+.mission_sec .mission_cont .mis_wrap .cont p {
+    font-size: 12px;
+}
+
+/** Volunteers Section CSS **/
+
 .volunteer_sec {
     padding: 4rem 0;
+    background-image: url(../images/sec_bg-img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .volunteer_sec .custom_row {
@@ -144,7 +218,7 @@
 /** Counter Section CSS here **/
 
 .counter_sec {
-    padding: 4rem 0;
+    padding: 5rem 0;
     background: url(../images/donation.jpg) rgba(0,0,0,0.7);
     background-size: cover;
     background-position: center;
@@ -165,6 +239,7 @@
 
 .counter_sec .counterWrap i {
     font-size: 40px;
+    color: #cf2e2e;
 }
 
 .counter_sec .counterWrap h5 {
@@ -181,7 +256,11 @@
 
 .upcoming_sec {
     padding: 4rem 0;
-    background: linear-gradient(-90deg, rgba(251, 115, 4, 0.302) 0%, rgba(209, 46, 46, 0.122) 100%);
+    /* background-image: url(../images/sec_bg-img.jpg); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: url(../images/sec_bg-img.jpg), linear-gradient(-90deg, rgba(251, 115, 4, 0.302) 0%, rgba(209, 46, 46, 0.122) 100%);
+    background-blend-mode: multiply;
 }
 
 .upcoming_sec .custom_row {
@@ -244,4 +323,28 @@
 
 .eventCard a {
     text-transform: capitalize;
+}
+
+
+/** Need Help CSS **/
+
+.needHelp_sec {
+    padding: 4rem 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: url(../images/sec_bg-img.jpg), rgba(0,0,0,0.85);
+    background-blend-mode: darken;
+}
+
+.needHelp_inner {
+    color: #fff;
+}
+
+.needHelp_inner h3, .needHelp_inner .cont {
+    display: block;
+    margin: 0 0 20px;
+}
+
+.needHelp_inner .cont {
+    font-size: 14px;
 }

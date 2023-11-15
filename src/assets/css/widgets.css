@@ -1,4 +1,8 @@
-/** Button Hover CSS **/
+.textCenter {
+    text-align: center;
+}
+
+/** Button CSS **/
 
 .butn {
     display: inline-flex;
@@ -9,8 +13,6 @@
     text-decoration: none;
     background-color: transparent;
     padding: 1rem;
-    height: 3rem;
-    width: 9rem;
     border-radius: 2px;
     border: 1px solid transparent;
     position: relative;
@@ -43,9 +45,7 @@
 
 .butn_sm {
     font-size: 12px;
-    padding: 0.5rem;
-    height: 2rem;
-    width: 6rem;  
+    padding: 0.3rem 0.8rem;  
 }
 
 .butn_rounded {

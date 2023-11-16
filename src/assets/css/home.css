@@ -83,6 +83,7 @@
     font-size: 18px;
     font-weight: 500;
     margin: 0 0 20px;
+    font-family: 'Montserrat';
 }
 
 .mission_sec .mis_wrap {
@@ -114,6 +115,7 @@
 .mission_sec .mission_cont .mis_wrap .cont h5 {
     margin: 0 0 10px;
     color: #ce2e2e;
+    font-family: 'Montserrat';
 }
 
 .mission_sec .mission_cont .mis_wrap .cont p {
@@ -162,6 +164,7 @@
     margin: 10px 0;
     text-align: center;
     font-weight: 500;
+    font-family: 'Montserrat';
 }
 
 .voluntCard:hover h4 {
@@ -300,6 +303,7 @@
     margin: 0 0 10px;
     font-size: 18px;
     font-weight: 500;
+    font-family: 'Montserrat';
 }
 
 .eventCard .eventFlex {
@@ -347,4 +351,255 @@
 
 .needHelp_inner .cont {
     font-size: 14px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/** Responsive CSS starts here **/
+
+@media (max-width: 1199.98px) {
+
+    .mission_sec {
+        padding: 3rem 0 0;
+    }
+
+    .mission_sec .custom_row {
+        margin: 3rem 0 0;
+    }
+
+    .mission_sec .mission_cont h4 {
+        font-size: 17px;
+        margin: 0 0 15px;
+    }
+
+    .volunteer_sec {
+        padding: 3rem 0;
+    }
+
+    .voluntCard {
+        padding: 40px 30px;
+        border-radius: 80px;
+        margin: 15px 5px;
+    }
+
+    .voluntCard .imgTop img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .voluntCard h4 {
+        font-size: 16px;
+    }
+
+    .upcoming_sec {
+        padding: 3rem 0;
+    }
+}
+
+@media (max-width: 991.98px) {
+
+    .hero_slider_sec {
+        min-height: 400px;
+    }
+    
+    .hero_slider_sec .slick-track {
+        height: 400px;
+    }
+
+    .hero_slider_sec .slideItem .slider_cont {
+        padding: 15% 0 5% 0;
+    }
+
+    .hero_slider_sec .slideItem .slider_cont h3 {
+        font-size: 1.5rem;
+    }
+
+    .hero_slider_sec .slideItem .slider_cont p {
+        font-size: 14px;
+    }
+
+    .mission_sec .custom_row {
+        margin: 2rem 0 0;
+    }
+
+    .mission_sec .mis_wrap .ic_wrap {
+        width: 95px;
+        height: 55px;
+        line-height: 55px;
+    }
+
+    .mission_sec .mission_cont .mis_wrap .cont h5 {
+        margin: 0 0 5px;
+    }
+
+    .voluntCard {
+        padding: 35px 20px;
+        margin: 15px 0;
+    }
+
+    .eventCard {
+        flex-direction: column;
+    }
+
+    .eventCard .card_img, .eventCard .card_body {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .eventCard .card_img img {
+        width: 100%;
+        height: 250px;
+        object-position: top;
+    }
+
+    .needHelp_sec {
+        padding: 3rem 0;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .hero_slider_sec .slideItem .slider_cont {
+        padding: 20% 0 5% 0;
+    }
+
+    .mission_sec {
+        padding: 2rem 0 0;
+    }
+
+    .mission_sec .custom_row {
+        flex-direction: column-reverse;
+    }
+
+    .mission_sec .custom_col-6 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .mission_sec .mis_wrap .ic_wrap {
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+    }
+
+    .volunteer_sec {
+        padding: 2rem 0;
+    }
+
+    .volunteer_sec .custom_col-3 {
+        flex: 0 0 48%;
+        max-width: 48%;
+    }
+
+    .voluntCard {
+        display: flex;
+        display: -ms-flexbox;
+        justify-content: space-around;
+        align-items: center;
+        padding: 15px;
+        border-radius: 20px;
+        margin: 10px 0;
+    }
+
+    .voluntCard .imgTop img {
+        width: 85px;
+        height: 85px;
+    }
+
+    .voluntCard ul.social {
+        gap: 10px;
+        margin: 8px 0;
+        border-radius: 20px;
+    }
+
+    .counter_sec {
+        padding: 4rem 0;
+    }
+
+    .counter_sec .custom_col-3 {
+        flex: 0 0 45%;
+        max-width: 45%;
+    }
+
+    .eventCard .eventFlex {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 575.98px) {
+
+    .hero_slider_sec .slideItem .slider_cont h3 {
+        font-size: 1rem;
+    }
+    
+    .volunteer_sec .custom_col-3, .counter_sec .custom_col-3 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .upcoming_sec .custom_col-6 {
+        flex: 0 0 48%;
+        max-width: 48%;
+    }
+    
+    .eventCard .card_img img {
+        height: 200px;
+    }
+}
+
+@media (max-width: 475.98px) {
+
+    .mission_sec .mission_cont {
+        padding: 0;
+    }
+
+    .mission_sec .mis_wrap .ic_wrap {
+        width: 85px;
+        height: 55px;
+        line-height: 55px;
+    }
+
+    .voluntCard ul.social li a {
+        font-size: 12px;
+    }
+
+    .voluntCard .imgTop img {
+        width: 75px;
+        height: 75px;
+    }
+
+    .eventCard .card_body h3 {
+        margin: 0 0 8px;
+        font-size: 16px;
+    }
+
+    .upcoming_sec {
+        padding: 2rem 0;
+    }
+
+    .upcoming_sec .custom_col-6 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    
+    .eventCard .card_img img {
+        height: 300px;
+    }
+
+    .needHelp_inner .cont {
+        font-size: 13px;
+    }
 }

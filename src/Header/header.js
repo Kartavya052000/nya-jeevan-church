@@ -25,13 +25,13 @@ const Header = () => {
                     <Link to="/" title='Home'>Home</Link>
                   </li>
                   <li className='menu_item linkEffect'>
-                    <Link to="/" title='About'>About</Link>
+                    <Link to="/about" title='About'>About</Link>
                   </li>
                   <li className='menu_item linkEffect'>
-                  <Link to="/" title='Services'>Services</Link>
+                  <Link to="/ministries" title='Ministries'>Ministries</Link>
                   </li>
                   <li className='menu_item linkEffect'>
-                    <a href='/' title='Blog'>Blog</a>
+                    <a href='/' title='Events'>Events</a>
                   </li>
                   <li className='menu_item linkEffect'>
                     <a href='/' title='Contact'>Contact</a>

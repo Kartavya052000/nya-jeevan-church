@@ -127,19 +127,21 @@ const Home = () => {
                             <div className='imgTop'>
                                 <img src={child} alt='' />
                             </div>
-                            <h4>Jennifer Doe</h4>
-                            <span>Head Volunteer</span>
-                            <ul className='social'>
-                                <li>
-                                    <a href='#' title='Twitter'><i className='fa fa-twitter'></i></a>
-                                </li>
-                                <li>
-                                    <a href='#' title='Facebook'><i className='fa fa-facebook'></i></a>
-                                </li>
-                                <li>
-                                    <a href='#' title='LinkedIn'><i className='fa fa-linkedin'></i></a>
-                                </li>
-                            </ul>
+                            <div className='volunBody'>
+                                <h4>Jennifer Doe</h4>
+                                <span>Head Volunteer</span>
+                                <ul className='social'>
+                                    <li>
+                                        <a href='#' title='Twitter'><i className='fa fa-twitter'></i></a>
+                                    </li>
+                                    <li>
+                                        <a href='#' title='Facebook'><i className='fa fa-facebook'></i></a>
+                                    </li>
+                                    <li>
+                                        <a href='#' title='LinkedIn'><i className='fa fa-linkedin'></i></a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                     <div className='custom_col-3'>
@@ -147,19 +149,21 @@ const Home = () => {
                             <div className='imgTop'>
                                 <img src={child} alt='' />
                             </div>
-                            <h4>Jennifer Doe</h4>
-                            <span>Head Volunteer</span>
-                            <ul className='social'>
-                                <li>
-                                    <a href='#' title='Twitter'><i className='fa fa-twitter'></i></a>
-                                </li>
-                                <li>
-                                    <a href='#' title='Facebook'><i className='fa fa-facebook'></i></a>
-                                </li>
-                                <li>
-                                    <a href='#' title='LinkedIn'><i className='fa fa-linkedin'></i></a>
-                                </li>
-                            </ul>
+                            <div className='volunBody'>
+                                <h4>Jennifer Doe</h4>
+                                <span>Head Volunteer</span>
+                                <ul className='social'>
+                                    <li>
+                                        <a href='#' title='Twitter'><i className='fa fa-twitter'></i></a>
+                                    </li>
+                                    <li>
+                                        <a href='#' title='Facebook'><i className='fa fa-facebook'></i></a>
+                                    </li>
+                                    <li>
+                                        <a href='#' title='LinkedIn'><i className='fa fa-linkedin'></i></a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                     <div className='custom_col-3'>
@@ -167,19 +171,21 @@ const Home = () => {
                             <div className='imgTop'>
                                 <img src={child} alt='' />
                             </div>
-                            <h4>Jennifer Doe</h4>
-                            <span>Head Volunteer</span>
-                            <ul className='social'>
-                                <li>
-                                    <a href='#' title='Twitter'><i className='fa fa-twitter'></i></a>
-                                </li>
-                                <li>
-                                    <a href='#' title='Facebook'><i className='fa fa-facebook'></i></a>
-                                </li>
-                                <li>
-                                    <a href='#' title='LinkedIn'><i className='fa fa-linkedin'></i></a>
-                                </li>
-                            </ul>
+                            <div className='volunBody'>
+                                <h4>Jennifer Doe</h4>
+                                <span>Head Volunteer</span>
+                                <ul className='social'>
+                                    <li>
+                                        <a href='#' title='Twitter'><i className='fa fa-twitter'></i></a>
+                                    </li>
+                                    <li>
+                                        <a href='#' title='Facebook'><i className='fa fa-facebook'></i></a>
+                                    </li>
+                                    <li>
+                                        <a href='#' title='LinkedIn'><i className='fa fa-linkedin'></i></a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                     <div className='custom_col-3'>
@@ -187,19 +193,21 @@ const Home = () => {
                             <div className='imgTop'>
                                 <img src={child} alt='' />
                             </div>
-                            <h4>Jennifer Doe</h4>
-                            <span>Head Volunteer</span>
-                            <ul className='social'>
-                                <li>
-                                    <a href='#' title='Twitter'><i className='fa fa-twitter'></i></a>
-                                </li>
-                                <li>
-                                    <a href='#' title='Facebook'><i className='fa fa-facebook'></i></a>
-                                </li>
-                                <li>
-                                    <a href='#' title='LinkedIn'><i className='fa fa-linkedin'></i></a>
-                                </li>
-                            </ul>
+                            <div className='volunBody'>
+                                <h4>Jennifer Doe</h4>
+                                <span>Head Volunteer</span>
+                                <ul className='social'>
+                                    <li>
+                                        <a href='#' title='Twitter'><i className='fa fa-twitter'></i></a>
+                                    </li>
+                                    <li>
+                                        <a href='#' title='Facebook'><i className='fa fa-facebook'></i></a>
+                                    </li>
+                                    <li>
+                                        <a href='#' title='LinkedIn'><i className='fa fa-linkedin'></i></a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>

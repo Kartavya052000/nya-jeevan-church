@@ -1,0 +1,14 @@
+.innerPg_header {
+    padding: 15% 0 8% 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: url(../assets/images/sec_bg-img.jpg), rgba(0,0,0,0.85);
+    background-blend-mode: darken;
+}
+
+.innerPg_header h2 {
+    margin: 0;
+    color: #fff;
+    font-size: 2rem;
+    font-family: 'Montserrat';
+}

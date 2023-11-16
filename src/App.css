@@ -1,6 +1,8 @@
 @import url(assets/css/basic.css);
 @import url(assets/css/widgets.css);
+@import url(components/style.css);
 @import url(assets/css/home.css);
+@import url(assets/css/about.css);
 
 * {
   box-sizing: border-box;
@@ -188,9 +190,9 @@ p {
 
 .footerCol_inner h4 {
   color: #fff;
-  font-family: 'Russo One';
+  font-family: 'Montserrat';
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 500;
   line-height: normal;
   margin: 0 0 20px;
   text-align: left;
@@ -400,13 +402,23 @@ footer .copyright img {
     margin: 0;
   }
 
+  .footer-sec {
+    padding: 3rem 0 2rem;
+  }
+
+  ul.foot_menu li a {
+    font-size: 14px;
+    margin: 0 0 10px;
+  }
+
   .footerCol-3 {
       flex: 1 1 32%;
       max-width: 32%;
   }
 
   .footerCol_inner ul.address li {
-      font-size: 14px;
+    font-size: 13px;
+    font-weight: 300;
   }
 
   .footerCol_inner ul.address li i, .footerCol_inner ul.address li span img {
@@ -414,7 +426,7 @@ footer .copyright img {
   }
 
   .footerCol_inner p {
-    font-size: 14px;
+    font-size: 13px;
     line-height: normal;
   }
 }

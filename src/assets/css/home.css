@@ -329,6 +329,81 @@
     text-transform: capitalize;
 }
 
+/** Testimonial CSS starts here **/
+
+.testimonial_sec {
+    padding: 4rem 0;
+}
+
+.testimonial_inner {
+    margin: 5rem auto 1rem;
+    width: 90%;
+}
+
+.testimonial_inner .slick-slide {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #fff;
+    padding: 1rem;
+    /* margin: 5px 15px 5px 0; */
+    transform: scale(0.8);
+    transition: all 0.4s ease-in-out;
+}
+
+.testimonial_inner .slick-slide,
+.testimonial_inner .slick-slide[aria-hidden="true"]:not(.slick-cloned) ~ .slick-cloned[aria-hidden="true"] {
+  transform: scale(0.8, 0.8);
+  transition: all 0.4s ease-in-out;
+}
+
+.testimonial_inner .slick-slide[aria-hidden="true"]:not(.slick-cloned) ~ .slick-cloned[aria-hidden="true"] {
+    opacity: 0.5;
+}
+
+.testimonial_inner .slick-center,
+.testimonial_inner .slick-slide[aria-hidden="true"]:not([tabindex="-1"]) + .slick-cloned[aria-hidden="true"] {
+  transform: scale(1);
+  background-color: #a2a2a212;
+}
+
+.testimonial_inner .slick-slide.slick-center {
+    position: relative;
+}
+
+.testimonial_inner .slick-slide.slick-center:before {
+    content: "\f10d";
+    top: 0;
+    left: 5px;
+}
+
+.testimonial_inner .slick-slide.slick-center:after {
+    content: "\f10e";
+    right: 5px;
+    bottom: 0;
+}
+
+.testimonial_inner .slick-slide.slick-center:before, .testimonial_inner .slick-slide.slick-center:after {
+    position: absolute;
+    font-family: var(--fa-style-family,"Font Awesome 6 Free");
+    font-weight: var(--fa-style,900);
+    color: #ddd;
+    font-size: 4rem;
+    z-index: -1;
+    transition: all 0.3s ease-in-out;
+}
+
+.testimonial_sec .testi_cont {
+    text-align: left;
+    font-size: 15px;
+}
+
+.testimonial_sec .testi_cont h3 {
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Montserrat';
+    color: #ce2e2e;
+}
+
 
 /** Need Help CSS **/
 
@@ -537,6 +612,18 @@
         flex-wrap: wrap;
         justify-content: space-between;
     }
+
+    .testimonial_sec {
+        padding: 3rem 0;
+    }
+
+    .testimonial_inner {
+        margin: 3rem auto 1rem;
+    }
+
+    .testimonial_sec .testi_cont {
+        font-size: 14px;
+    }
 }
 
 @media (max-width: 575.98px) {
@@ -544,7 +631,7 @@
     .hero_slider_sec .slideItem .slider_cont h3 {
         font-size: 1rem;
     }
-    
+
     .volunteer_sec .custom_col-3, .counter_sec .custom_col-3 {
         flex: 0 0 100%;
         max-width: 100%;
@@ -557,6 +644,19 @@
     
     .eventCard .card_img img {
         height: 200px;
+    }
+
+    .testimonial_sec {
+        padding: 2rem 0;
+    }
+
+    .testimonial_inner {
+        margin: 2rem auto 0;
+        width: 100%;
+    }
+
+    .testimonial_sec .testi_cont {
+        font-size: 13px;
     }
 }
 

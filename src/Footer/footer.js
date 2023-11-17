@@ -13,7 +13,7 @@ const Footer = () => {
             <div className='footerCol-6'>
               <div className='footerCol_inner'>
                 <h4>About Us</h4>
-                <p>Lorem Ipsum dolor sit amet, we revolutionize the way businesses connect with their target audiences. Our dynamic fleet of mobile billboards transforms ordinary trucks into powerful advertising mediums.</p>
+                <p>At Nav Jeevan Church, we are dedicated to creating positive change and fostering a brighter future for communities in need. Established with a commitment to service and compassion, our non-profit organization focuses on a range of impactful initiatives aimed at addressing societal challenges.</p>
                 <ul className='social_info'>
                   <li>
                     <a href='#'>

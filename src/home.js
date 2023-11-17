@@ -6,9 +6,9 @@ import children from './assets/images/children.jpg';
 import eventImg from './assets/images/eventimg.jpg';
 import childBw from './assets/images/child_bw.jpg';
 
-var settings = {
-    dots: true,
-    arrows: true,
+var heroSlidersettings = {
+    dots: false,
+    arrows: false,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
@@ -17,12 +17,33 @@ var settings = {
     autoplaySpeed: 2000
 };
 
+var testimonialsettings = {
+    dots: false,
+    arrows: false,
+    // infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    centerMode: true,
+    centerPadding: '20px',
+    responsive: [
+        {
+          breakpoint: 992,
+          settings: {
+            slidesToShow: 1
+          }
+        }
+    ]
+};
+
 const Home = () => {
     return(
         <>
         <section className='hero_slider_sec'>
             <div className='slider_inner'>
-                <Slider {...settings}>
+                <Slider {...heroSlidersettings}>
                     <div>
                         <div className='slideItem' style={{backgroundImage: `url(${child})`}}>
                             <div className='slidebgOverlay'></div>
@@ -339,6 +360,62 @@ const Home = () => {
                     <a href='#' title='View All Events' className='butn butn_main butn_rounded butn_sm'>View All Events</a>
                 </div>
             </div>
+        </section>
+
+        <section className='testimonial_sec'>
+            <div className='custom-container'>
+                <div class="sec_ttl">
+                    <h2>What Our <span>Donator</span> Says</h2>
+                    <span class="fancy_ttl"><i class="fa fa-child-reaching"></i></span>
+                </div>
+            </div>
+            <div className='custom-container'>
+                <div className='testimonial_inner'>
+                    <Slider {...testimonialsettings}>
+                        <div>
+                            <div className='testiItem'>
+                                <div className='testi_cont'>
+                                    <p>Thanks to Charity, I now have access to education and a brighter future. They made it possible for me to pursue my dreams and break free from the cycle of poverty.</p>
+                                    <div className='info'>
+                                        <h3>-Rachel</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div className='testiItem'>
+                                <div className='testi_cont'>
+                                    <p>Volunteering with Charity has been a truly fulfilling experience. The team's dedication to making a difference is inspiring, and I'm proud to be part of such a compassionate community.</p>
+                                    <div className='info'>
+                                        <h3>-Jane</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div className='testiItem'>
+                                <div className='testi_cont'>
+                                    <p>Supporting Charity is an investment in real change. I've witnessed the impact of my donations firsthand, and it's incredible to see the tangible difference they make in the lives of those in need.</p>
+                                    <div className='info'>
+                                        <h3>-John</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div className='testiItem'>
+                                <div className='testi_cont'>
+                                    <p>Collaborating with Charity has strengthened our community. Their initiatives go beyond charity; they empower individuals and create sustainable positive change.</p>
+                                    <div className='info'>
+                                        <h3>-Jennifer</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </Slider>
+                </div>
+            </div>
+
         </section>
 
         <section className='needHelp_sec'>

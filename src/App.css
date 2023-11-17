@@ -476,9 +476,14 @@ footer .copyright img {
   }
 
   .hamburger {
-      display: block;
-      cursor: pointer;
-  }
+    display: flex;
+    display: -ms-flexbox;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 40px;
+    height: 20px;
+}
 
   .hamburger span.bar {
       position: relative;

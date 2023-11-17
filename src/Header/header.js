@@ -31,10 +31,10 @@ const Header = () => {
                   <Link to="/ministries" title='Ministries'>Ministries</Link>
                   </li>
                   <li className='menu_item linkEffect'>
-                    <a href='/' title='Events'>Events</a>
+                    <a href='/events' title='Events'>Events</a>
                   </li>
                   <li className='menu_item linkEffect'>
-                    <a href='/' title='Contact'>Contact</a>
+                    <a href='/contact' title='Contact'>Contact</a>
                   </li>
                   <li className='menu_item'>
                     <Link className='butn butn_main' to="/" title='Donate'>Donate</Link>

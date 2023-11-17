@@ -5,6 +5,7 @@ import Home from "./home";
 import Footer from "./Footer/footer";
 import About from "./about";
 import Ministries from "./ministries";
+import Contact from "./contact";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route exact path='/' element={<Home />} />
           <Route exact path='/about' element={<About />} />
           <Route exact path='/ministries' element={<Ministries/>} />
+          <Route exact path='/contact' element={<Contact/>} />
         </Routes>
         <Footer />
       </Router>

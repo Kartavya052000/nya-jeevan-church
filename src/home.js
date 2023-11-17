@@ -1,5 +1,7 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Slider from 'react-slick';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import donation from './assets/images/donation.jpg';
 import child from './assets/images/poorchild.jpg';
 import children from './assets/images/children.jpg';
@@ -7,7 +9,7 @@ import eventImg from './assets/images/eventimg.jpg';
 import childBw from './assets/images/child_bw.jpg';
 
 var heroSlidersettings = {
-    dots: false,
+    dots: true,
     arrows: false,
     infinite: true,
     speed: 500,
@@ -39,6 +41,10 @@ var testimonialsettings = {
 };
 
 const Home = () => {
+
+    useEffect(() => {
+        AOS.init({once: true});
+    }, [])
     return(
         <>
         <section className='hero_slider_sec'>
@@ -49,9 +55,9 @@ const Home = () => {
                             <div className='slidebgOverlay'></div>
                             <div className='custom-container'>
                                 <div className='slider_cont'>
-                                    <h3>Help Us with Donate</h3>
-                                    <p>Lorem Ispum dolor sit amet</p>
-                                    <a href='#' title='Contact Us' className='butn butn_main butn_sm butn_rounded'>Contact Us</a>
+                                    <h3 data-aos='fade-up' data-aos-duration='1200'>Help Us with Donate</h3>
+                                    <p data-aos='fade-up' data-aos-duration='1400'>Lorem Ispum dolor sit amet</p>
+                                    <a href='#' title='Contact Us' className='butn butn_main butn_sm butn_rounded' data-aos='fade-up' data-aos-duration='1600'>Contact Us</a>
                                 </div>
                             </div>
                         </div>
@@ -86,7 +92,7 @@ const Home = () => {
 
         <section className='mission_sec'>
             <div className='custom-container'>
-                <div className='sec_ttl'>
+                <div className='sec_ttl' data-aos='fade-up' data-aos-duration='1500'>
                     <h2><span>Our</span> Mission</h2>
                     <span className='fancy_ttl'>
                         <i className='fa fa-child-reaching'></i>
@@ -94,14 +100,14 @@ const Home = () => {
                 </div>
                 <div className='custom_row'>
                     <div className='custom_col-6'>
-                        <div className='left_img'>
+                        <div className='left_img' data-aos='fade-right' data-aos-duration='1500'>
                             <img src={childBw} alt='Our Mission' />
                         </div>
                     </div>
                     <div className='custom_col-6'>
                         <div className='mission_cont'>
                             <h4>How can you help us?</h4>
-                            <div className='mis_wrap'>
+                            <div className='mis_wrap' data-aos='fade-left' data-aos-duration='1000'>
                                 <div className='ic_wrap'>
                                     <i className='fa fa-hand-holding-dollar'></i>
                                 </div>
@@ -110,7 +116,7 @@ const Home = () => {
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                                 </div>
                             </div>
-                            <div className='mis_wrap'>
+                            <div className='mis_wrap' data-aos='fade-left' data-aos-duration='1200'>
                                 <div className='ic_wrap'>
                                     <i className='fa fa-hand-holding-dollar'></i>
                                 </div>
@@ -119,7 +125,7 @@ const Home = () => {
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                                 </div>
                             </div>
-                            <div className='mis_wrap'>
+                            <div className='mis_wrap' data-aos='fade-left' data-aos-duration='1500'>
                                 <div className='ic_wrap'>
                                     <i className='fa fa-hand-holding-dollar'></i>
                                 </div>
@@ -136,7 +142,7 @@ const Home = () => {
 
         <section className='volunteer_sec'>
             <div className='custom-container'>
-                <div className='sec_ttl'>
+                <div className='sec_ttl' data-aos='fade-up' data-aos-duration='1500'>
                     <h2><span>Our</span> Volunteers</h2>
                     <span className='fancy_ttl'>
                         <i className='fa fa-child-reaching'></i>
@@ -144,7 +150,7 @@ const Home = () => {
                 </div>
                 <div className='custom_row'>
                     <div className='custom_col-3'>
-                        <div className='voluntCard'>
+                        <div className='voluntCard' data-aos='fade-up' data-aos-duration='1200'>
                             <div className='imgTop'>
                                 <img src={child} alt='' />
                             </div>
@@ -166,7 +172,7 @@ const Home = () => {
                         </div>
                     </div>
                     <div className='custom_col-3'>
-                        <div className='voluntCard'>
+                        <div className='voluntCard' data-aos='fade-up' data-aos-duration='1500'>
                             <div className='imgTop'>
                                 <img src={child} alt='' />
                             </div>
@@ -188,7 +194,7 @@ const Home = () => {
                         </div>
                     </div>
                     <div className='custom_col-3'>
-                        <div className='voluntCard'>
+                        <div className='voluntCard' data-aos='fade-up' data-aos-duration='1800'>
                             <div className='imgTop'>
                                 <img src={child} alt='' />
                             </div>
@@ -210,7 +216,7 @@ const Home = () => {
                         </div>
                     </div>
                     <div className='custom_col-3'>
-                        <div className='voluntCard'>
+                        <div className='voluntCard' data-aos='fade-up' data-aos-duration='2000'>
                             <div className='imgTop'>
                                 <img src={child} alt='' />
                             </div>
@@ -240,28 +246,28 @@ const Home = () => {
                 <div className='counter_inner'>
                     <div className='custom_row'>
                         <div className='custom_col-3'>
-                            <div className='counterWrap'>
+                            <div className='counterWrap' data-aos='fade-up' data-aos-duration='1200'>
                                 <i className='fa fa-hand-holding-heart'></i>
                                 <h5>Counter Text Here</h5>
                                 <div className='counterPercentage'>999%</div>
                             </div>
                         </div>
                         <div className='custom_col-3'>
-                            <div className='counterWrap'>
+                            <div className='counterWrap' data-aos='fade-up' data-aos-duration='1200'>
                                 <i className='fa fa-hands-holding-circle'></i>
                                 <h5>Counter Text Here</h5>
                                 <div className='counterPercentage'>999%</div>
                             </div>
                         </div>
                         <div className='custom_col-3'>
-                            <div className='counterWrap'>
+                            <div className='counterWrap' data-aos='fade-up' data-aos-duration='1200'>
                                 <i className='fa fa-hands-holding-child'></i>
                                 <h5>Counter Text Here</h5>
                                 <div className='counterPercentage'>999%</div>
                             </div>
                         </div>
                         <div className='custom_col-3'>
-                            <div className='counterWrap'>
+                            <div className='counterWrap' data-aos='fade-up' data-aos-duration='1200'>
                                 <i className='fa fa-hand-holding-dollar'></i>
                                 <h5>Counter Text Here</h5>
                                 <div className='counterPercentage'>999%</div>
@@ -274,12 +280,12 @@ const Home = () => {
 
         <section className='upcoming_sec'>
             <div className='custom-container'>
-                <div class="sec_ttl">
+                <div className='sec_ttl' data-aos='fade-up' data-aos-duration='1500'>
                     <h2><span>Upcoming</span> Events</h2>
-                    <span class="fancy_ttl"><i class="fa fa-child-reaching"></i></span>
+                    <span className='fancy_ttl'><i className='fa fa-child-reaching'></i></span>
                 </div>
                 <div className='custom_row'>
-                    <div className='custom_col-6'>
+                    <div className='custom_col-6' data-aos='fade-up' data-aos-duration='1500'>
                         <div className='eventCard'>
                             <div className='card_img'>
                                 <img src={eventImg} alt='Event' />
@@ -298,7 +304,7 @@ const Home = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='custom_col-6'>
+                    <div className='custom_col-6' data-aos='fade-up' data-aos-duration='1500'>
                         <div className='eventCard'>
                             <div className='card_img'>
                                 <img src={eventImg} alt='Event' />
@@ -317,7 +323,7 @@ const Home = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='custom_col-6'>
+                    <div className='custom_col-6' data-aos='fade-up' data-aos-duration='1500'>
                         <div className='eventCard'>
                             <div className='card_img'>
                                 <img src={eventImg} alt='Event' />
@@ -336,7 +342,7 @@ const Home = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='custom_col-6'>
+                    <div className='custom_col-6' data-aos='fade-up' data-aos-duration='1500'>
                         <div className='eventCard'>
                             <div className='card_img'>
                                 <img src={eventImg} alt='Event' />
@@ -356,7 +362,7 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
-                <div className='sec_btnWrap'>
+                <div className='sec_btnWrap' data-aos='zoom-out' data-aos-duration='1500'>
                     <a href='#' title='View All Events' className='butn butn_main butn_rounded butn_sm'>View All Events</a>
                 </div>
             </div>
@@ -364,13 +370,13 @@ const Home = () => {
 
         <section className='testimonial_sec'>
             <div className='custom-container'>
-                <div class="sec_ttl">
+                <div className='sec_ttl' data-aos='fade-up' data-aos-duration='1500'>
                     <h2>What Our <span>Donator</span> Says</h2>
-                    <span class="fancy_ttl"><i class="fa fa-child-reaching"></i></span>
+                    <span className='fancy_ttl'><i className='fa fa-child-reaching'></i></span>
                 </div>
             </div>
             <div className='custom-container'>
-                <div className='testimonial_inner'>
+                <div className='testimonial_inner' data-aos='zoom-in-up' data-aos-duration='1500'>
                     <Slider {...testimonialsettings}>
                         <div>
                             <div className='testiItem'>
@@ -420,7 +426,7 @@ const Home = () => {
 
         <section className='needHelp_sec'>
             <div className='custom-container'>
-                <div className='needHelp_inner'>
+                <div className='needHelp_inner' data-aos='fade-up' data-aos-duration='1500'>
                     <h3>We Need Your Help</h3>
                     <div className='cont'>
                         Our Charity helps those who have no hope.

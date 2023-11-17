@@ -58,6 +58,51 @@
     margin: 5px 0 15px;
 }
 
+.hero_slider_sec .slick-slider {
+    position: relative;
+}
+
+.hero_slider_sec .slick-slider .slick-dots {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    width: auto;
+}
+
+.hero_slider_sec .slick-slider .slick-dots li {
+    display: block;
+    border-radius: 50%;
+    margin: 10px 0;
+    width: 15px;
+    height: 15px;
+    display: flex;
+    display: -ms-flexbox;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero_slider_sec .slick-slider .slick-dots li button {
+    width: 5px;
+    height: 5px;
+    line-height: 5px;
+    background-color: #fff;
+    border-radius: 50%;
+    outline: 2px solid #fff;
+    outline-offset: 2px;
+    opacity: 0.6;
+    transition: all 0.3s ease;
+}
+
+.hero_slider_sec .slick-slider .slick-dots li button:before {
+    content: none;
+}
+
+.hero_slider_sec .slick-slider .slick-dots li.slick-active button {
+    background-color: #ce2e2e;
+    outline-color: #ce2e2e;
+    opacity: 1;
+}
+
 /** Our Mission Section CSS **/
 
 .mission_sec {

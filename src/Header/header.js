@@ -37,7 +37,7 @@ const Header = () => {
                     <a href='/contact' title='Contact'>Contact</a>
                   </li>
                   <li className='menu_item'>
-                    <Link className='butn butn_main' to="/" title='Donate'>Donate</Link>
+                  <Link className='butn butn_main' to="https://buy.stripe.com/test_5kAbLq39w22Y3eg144" title='Donate'>Donate</Link>
                   </li>
                 </ul>
               </nav>

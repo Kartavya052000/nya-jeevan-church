@@ -3,6 +3,9 @@
 @import url(components/style.css);
 @import url(assets/css/home.css);
 @import url(assets/css/about.css);
+@import url(assets/css/ministries.css);
+@import url(assets/css/events.css);
+@import url(assets/css/contact.css);
 
 * {
   box-sizing: border-box;
@@ -102,6 +105,29 @@ p {
   width: 25px;
   height: 25px;
   margin-right: 2px;
+}
+
+.navigationWrapper ul li.dropdown {
+  position: relative;
+}
+
+.navigationWrapper ul li.dropdown .dropdownMain {
+  position: absolute;
+  top: 50px;
+  min-width: 180px;
+  background-color: #000;
+  flex-direction: column;
+  padding: 10px 12px;
+  opacity: 0;
+  visibility: hidden;
+  display: none;
+}
+
+.navigationWrapper ul li.dropdown .dropdownMain.active {
+  opacity: 1;
+  visibility: visible;
+  display: flex;
+  display: -ms-flexbox;
 }
 
 .hamburger {

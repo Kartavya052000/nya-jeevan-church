@@ -6,6 +6,9 @@ import Footer from "./Footer/footer";
 import About from "./about";
 import Ministries from "./ministries";
 import Contact from "./contact";
+import Events from "./events";
+import OutreachDetail from "./pages/outreach_detail";
+import MinistryDetail from "./pages/ministryDetail";
 
 function App() {
   return (
@@ -16,7 +19,10 @@ function App() {
           <Route exact path='/' element={<Home />} />
           <Route exact path='/about' element={<About />} />
           <Route exact path='/ministries' element={<Ministries/>} />
+          <Route exact path='/events' element={<Events />} />
           <Route exact path='/contact' element={<Contact/>} />
+          <Route exact path='/pages/outreach_detail' element={<OutreachDetail />} />
+          <Route exact path='/ministryDetail' element={<MinistryDetail />} />
         </Routes>
         <Footer />
       </Router>

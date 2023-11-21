@@ -42,6 +42,41 @@
 }
 
 
+/** For Ministry Details **/
+.ministries_sec .activeCard {
+    flex: 0 0 96%;
+    max-width: 96%;
+    padding: 0 15px;
+}
+
+.ministries_sec .activeCard img {
+    position: static;
+    max-width: 300px;
+    height: auto;
+}
+
+.ministries_sec .activeCard .mCard_body {
+    padding: 1rem;
+}
+
+.ministries_sec .activeCard .mCard_body h4 {
+    margin: 0 0 10px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.ministries_sec .activeCard .mCard_body p {
+    margin: 0 0 10px;
+    font-size: 14px;
+}
+
+
+
+
+
+
+
+
 
 
 

@@ -13,6 +13,12 @@ import { Button } from "rsuite";
 
 const Ministries = () => {
 
+    const [active, setActive] = useState(false);
+
+    const handleButtonClick = (index) => {
+        setActive(index);
+    };
+
     const [data, setData] = useState(null);
 
     useEffect(() => {
@@ -44,23 +50,22 @@ const Ministries = () => {
                         {cards.map((item, i) => {
                             return (
                                 <>
-                                    <div className='custom_col-6' key={i}>
+                                    <div className={`custom_col-6 ${active === i ? 'activeCard' : ''}`} key={item.id}>
                                         <div className='ministryCard' data-aos='fade-up' data-aos-duration='1500'>
-                                            <div className='mCard_body'>
-                                                <img src={item.img} />
-                                                <Button className='mcard_link' onClick={() => setData(item)}>{item.title}</Button>
-                                            </div>
+                                            <img src={item.img} />
+                                            {(active === i ?
+                                                data != null ?
+                                                    <MinistryDetail data={data} /> :
+                                                    ''
+                                                    : ''
+                                            )}
+                                            <Button className='mcard_link' onClick={() => setData(item) + handleButtonClick(i)}>{item.title}</Button>
                                         </div>
                                     </div>
                                 </>
                             )
                         })}
                     </div>
-                    {(data != null ?
-                        <MinistryDetail data={data} /> :
-                        ''
-                    )}
-                    
                 </div>
             </section>
         </>

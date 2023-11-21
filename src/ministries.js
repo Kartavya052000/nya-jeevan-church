@@ -34,12 +34,6 @@ const Ministries = () => {
         {id: '6', title : "Children's Secondary School", description: 'Lorem Ipsum dolor sit amet....', img: {childMeet}},
     ]
 
-    // const handleClick = () => {
-    //     // setData('jhfjh');
-    //     console.log(cards);
-    //     setData(cards.title);
-    // }
-
     return (
         <>
             <InnerHeader value='Ministries' />

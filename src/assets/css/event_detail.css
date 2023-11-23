@@ -1,0 +1,129 @@
+.event_detail_sec {
+    padding: 3rem 0;
+}
+
+.evnt_det_inner {
+    margin: 0 1rem;
+}
+
+.event_detail_sec .main_img {
+    width: 400px;
+    float: left;
+    margin-right: 30px;
+    margin-bottom: 10px;
+}
+
+.main_img {
+    overflow: hidden;
+    border-radius: 20px 0 20px 0;
+}
+
+.main_img img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.cont_Wrap .main_ttl {
+    font-size: 22px;
+    font-weight: 500;
+    color: #333;
+    margin: 0 0 10px;
+}
+
+.eventInfo {
+    display: flex;
+    display: -ms-flexbox;
+    align-items: center;
+    justify-content: space-between;
+    width: 45%;
+    margin: 15px 0;
+    font-size: 14px;
+    color: #444;
+}
+
+.eventInfo i {
+    color: #1bd7bb;
+}
+
+.mainCont {
+    margin: 1rem 0 0;
+    text-align: justify;
+}
+
+.mainCont p {
+    margin: 0 0 10px;
+    line-height: 1.6;
+    font-size: 14px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/** Responsive CSS starts here **/
+
+
+@media (max-width: 991.98px) {
+    .event_detail_sec .main_img {
+        width: 100%;
+        height: 300px;
+        float: none;
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .eventInfo {
+        width: 80%;
+    }
+}
+
+@media (max-width: 767.98px) {
+
+    .event_detail_sec {
+        padding: 2rem 0;
+    }
+
+    .eventInfo {
+        width: 90%;
+    }
+
+    .cont_Wrap .main_ttl {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 575.98px) {
+
+    .evnt_det_inner {
+        margin: 0;
+    }
+
+    .event_detail_sec .main_img {
+        margin-bottom: 15px;
+    }
+
+    .cont_Wrap .main_ttl {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 475.98px) {
+
+    .cont_Wrap .main_ttl {
+        font-size: 16px;
+    }
+
+    .mainCont p {
+        font-size: 13px;
+    }
+}

@@ -5,8 +5,6 @@ import { Link } from 'react-router-dom';
 const Header = () => {
   const [active, setActive] = useState(false);
 
-  const [isdropdown, setDropdown] = useState(false);
-
   return (
     <header className={`mainHeader ${active ? 'showMenu' : ''}`}>
       <div className='header_inner'>
@@ -32,9 +30,9 @@ const Header = () => {
                   <li className='menu_item linkEffect'>
                     <Link to="/ministries" title='Ministries'>Ministries</Link>
                   </li>
-                  <li className='menu_item linkEffect dropdown' onClick={() => setDropdown(!isdropdown)}>
-                    <Link to="javascript:void(0)" title='Outreach'>Outreach</Link>
-                    <ul className={`dropdownMain ${isdropdown ? 'active' : ''}`}>
+                  <li className='menu_item linkEffect dropdown'>
+                    <Link to="/outreach" title='Outreach'>Outreach</Link>
+                    <ul className='dropdownMain'>
                       <li className='linkEffect'>
                         <Link to='/pages/outreach_detail' title='Pakistan'>Pakistan</Link>
                       </li>

@@ -9,14 +9,13 @@ import womenMeet from './assets/images/women_meeting.jpg';
 import seniorMeet from './assets/images/senior_meetings.jpg';
 import childMeet from './assets/images/children_meet.jpg';
 import MinistryDetail from "./pages/ministryDetail";
-import { Button } from "rsuite";
+import { Link } from "react-router-dom";
 
 const Ministries = () => {
 
     const [active, setActive] = useState(false);
 
     const handleButtonClick = (index) => {
-        // window.location.href="/ministryDetail"
         setActive(index);
     };
 
@@ -53,21 +52,31 @@ const Ministries = () => {
 
             <section className='ministries_sec'>
                 <div className='custom-container'>
-                    <div className='custom_row'>
-                        {cards.map((item, i) => {
-                                    <div className={`custom_col-6 ${active === i ? 'activeCard' : ''}`} key={item.id}>
-                                        <div className='ministryCard' data-aos='fade-up' data-aos-duration='1500'>
-                                            <img src={item.img} />
-                                            {(active === i ?
-                                                data != null ?
-                                                    <MinistryDetail data={data} /> :
-                                                    ''
-                                                    : ''
-                                            )}
-                                            <Button className='mcard_link' onClick={() => setData(item) + handleButtonClick(i)}>{item.title}</Button>
+                    <div className='ministries_inner'>
+                        <div className='custom_row'>
+                            {cards.map((item, i) => {
+                                return (
+                                    <>
+                                        <div className={`custom_col-6 ${active === i ? 'activeCard' : ''}`} key={item.id}>
+                                            <Link className='mcard_link' to='/eventDetail' data-aos='fade-up' data-aos-duration='1500'>
+                                                <div className='ministryCard'>
+                                                    <img src={item.img} />
+                                                    {(active === i ?
+                                                        data != null ?
+                                                            <MinistryDetail data={data} /> :
+                                                            ''
+                                                            : ''
+                                                    )}
+                                                    <div className='ttlCard'>
+                                                        <h5 className='card_ttl'>{item.title}</h5>
+                                                    </div>
+                                                </div>
+                                            </Link>
                                         </div>
-                                    </div>
-                        })}
+                                    </>
+                                )
+                            })}
+                        </div>
                     </div>
                 </div>
             </section>

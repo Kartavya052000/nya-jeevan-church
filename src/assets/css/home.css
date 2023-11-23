@@ -140,7 +140,7 @@
 
 .mission_sec .mis_wrap .ic_wrap {
     position: relative;
-    background-color: #0fbed8;
+    background-color: #1bd7bb;
     border-radius: 50%;
     width: 60px;
     height: 60px;
@@ -159,7 +159,7 @@
 
 .mission_sec .mission_cont .mis_wrap .cont h5 {
     margin: 0 0 10px;
-    color: #0fbed8;
+    color: #1bd7bb;
     font-family: 'Montserrat';
 }
 
@@ -361,7 +361,7 @@
 }
 
 .eventCard .eventFlex span i {
-    color: #22e4ac;
+    color: #1bd7bb;
 }
 
 .eventCard .desc {

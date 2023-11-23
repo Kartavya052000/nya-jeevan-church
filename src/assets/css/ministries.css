@@ -2,74 +2,76 @@
     padding: 4rem 0;
 }
 
+.ministries_inner {
+    margin: 0 auto;
+    width: 90%;
+}
 .ministries_sec .custom_row {
     justify-content: center;
 }
 
-.ministryCard {
-    border-radius: 6px;
+.mcard_link {
     position: relative;
-    min-height: 300px;
+    min-height: 260px;
+    width: 100%;
     margin: 0 0 30px;
+    display: block;
     overflow: hidden;
+    border-radius: 10px 0 0 10px;
 }
 
-.ministryCard img {
+.mcard_link img {
     position: absolute;
-    width: 100%;
+    width: 80%;
     height: 100%;
     top: 0;
     left: 0;
+    transition: all 0.3s ease;
 }
 
-.ministryCard .mcard_link {
+.mcard_link:hover img {
+    transform: scale(1.1);
+}
+
+.mcard_link .ttlCard {
     position: absolute;
-    background-color: #fff;
-    bottom: 20px;
-    left: 20px;
-    padding: 8px 10px;
-    border-radius: 4px;
-    font-size: 14px;
-    color: #cf2e2e;
-    cursor: pointer;
-    border: none;
-    outline: none;
+    bottom: 5px;
+    right: 10px;
+    display: flex;
+    display: -ms-flexbox;
+    align-items: center;
+    text-align: center;
+    width: 30%;
+    height: 96%;
+    padding: 15px;
+    background: #fff;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+    z-index: -1;
 }
 
-.ministryCard .mcard_link:hover {
-    color: #fff;
-    background-color: #cf2e2e;
-}
-
-
-/** For Ministry Details **/
-.ministries_sec .activeCard {
-    flex: 0 0 96%;
-    max-width: 96%;
-    padding: 0 15px;
-}
-
-.ministries_sec .activeCard img {
-    position: static;
-    max-width: 300px;
-    height: auto;
-}
-
-.ministries_sec .activeCard .mCard_body {
-    padding: 1rem;
-}
-
-.ministries_sec .activeCard .mCard_body h4 {
-    margin: 0 0 10px;
-    font-size: 18px;
+.mcard_link h5.card_ttl {
+    font-size: 15px;
     font-weight: 500;
+    margin: 0;
+    color: #1bd7bb;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    margin-left: auto;
+    text-transform: uppercase;
 }
 
-.ministries_sec .activeCard .mCard_body p {
-    margin: 0 0 10px;
-    font-size: 14px;
+.mcard_link, .mcard_link .ttlCard, .mcard_link h5.card_ttl {
+    transition: all 0.3s ease;
 }
 
+.mcard_link:hover .ttlCard {
+    background: linear-gradient(45deg, #2af598 0%, #14c9cb 50%);
+}
+
+.mcard_link:hover h5.card_ttl {
+    letter-spacing: 2px;
+    color: #fff;
+}
 
 
 

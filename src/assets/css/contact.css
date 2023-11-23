@@ -21,6 +21,16 @@
     border-radius: 8px;
 }
 
+.formSubmit .butn {
+    background-color: #2af598;
+    color: #fff !important;
+}
+
+.formSubmit .butn:hover {
+    background-color: #14c9cb;
+    color: #fff !important;
+}
+
 
 
 

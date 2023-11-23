@@ -2,10 +2,11 @@ import React, { useEffect } from 'react';
 import Slider from 'react-slick';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import donation from './assets/images/donation.jpg';
-import child from './assets/images/poorchild.jpg';
-import children from './assets/images/children.jpg';
+import piggyBank from './assets/images/piggybank.jpg';
+import church from './assets/images/church.jpg';
+import bible from './assets/images/bible.jpg';
 import eventImg from './assets/images/eventimg.jpg';
+import child from './assets/images/poorchild.jpg';
 import childBw from './assets/images/child_bw.jpg';
 
 var heroSlidersettings = {
@@ -51,7 +52,7 @@ const Home = () => {
             <div className='slider_inner'>
                 <Slider {...heroSlidersettings}>
                     <div>
-                        <div className='slideItem' style={{backgroundImage: `url(${child})`}}>
+                        <div className='slideItem' style={{backgroundImage: `url(${church})`}}>
                             <div className='slidebgOverlay'></div>
                             <div className='custom-container'>
                                 <div className='slider_cont'>
@@ -63,7 +64,7 @@ const Home = () => {
                         </div>
                     </div>
                     <div>
-                        <div className='slideItem' style={{backgroundImage: `url(${children})`}}>
+                        <div className='slideItem' style={{backgroundImage: `url(${bible})`}}>
                             <div className='slidebgOverlay'></div>
                             <div className='custom-container'>
                                 <div className='slider_cont'>
@@ -75,7 +76,7 @@ const Home = () => {
                         </div>
                     </div>
                     <div>
-                        <div className='slideItem' style={{backgroundImage: `url(${donation})`}}>
+                        <div className='slideItem' style={{backgroundImage: `url(${piggyBank})`}}>
                             <div className='slidebgOverlay'></div>
                             <div className='custom-container'>
                                 <div className='slider_cont'>

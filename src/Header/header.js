@@ -50,8 +50,7 @@ const Header = () => {
                     <Link to="/contact" title='Contact'>Contact</Link>
                   </li>
                   <li className='menu_item'>
-                    <Link className='butn butn_main' to="https://buy.stripe.com/test_5kAbLq39w22Y3eg144" target='_blank' title='Donate'>Donate</Link>
-                  </li>
+                    <Link className='butn butn_main' to="https://buy.stripe.com/test_5kAbLq39w22Y3eg144" target='_blank' title='Donate'>Donate</Link>                  </li>
                 </ul>
               </nav>
             </div>

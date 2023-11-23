@@ -16,6 +16,7 @@ const Ministries = () => {
     const [active, setActive] = useState(false);
 
     const handleButtonClick = (index) => {
+        // window.location.href="/ministryDetail"
         setActive(index);
     };
 

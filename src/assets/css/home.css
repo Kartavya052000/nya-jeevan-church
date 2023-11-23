@@ -98,8 +98,8 @@
 }
 
 .hero_slider_sec .slick-slider .slick-dots li.slick-active button {
-    background-color: #ce2e2e;
-    outline-color: #ce2e2e;
+    background-color: #2af598;
+    outline-color: #22e4ac;
     opacity: 1;
 }
 
@@ -140,7 +140,7 @@
 
 .mission_sec .mis_wrap .ic_wrap {
     position: relative;
-    background-color: #ce2e2e;
+    background-color: #0fbed8;
     border-radius: 50%;
     width: 60px;
     height: 60px;
@@ -159,7 +159,7 @@
 
 .mission_sec .mission_cont .mis_wrap .cont h5 {
     margin: 0 0 10px;
-    color: #ce2e2e;
+    color: #0fbed8;
     font-family: 'Montserrat';
 }
 
@@ -190,8 +190,8 @@
 }
 
 .voluntCard:hover {
-    background-color: #ce2e2e;
-    box-shadow: 0px 0px 20px #ce2e2e;
+    background: linear-gradient(-170deg, #2af598 0%, #14c9cb 100%);;
+    box-shadow: 0px 0px 20px #14c9cb;
 }
 
 .voluntCard .imgTop img {
@@ -218,7 +218,7 @@
 
 .voluntCard span {
     font-size: 12px;
-    color: #ce2e2e;
+    color: #14c9cb;
     margin: 5px 0;
     display: block;
     text-align: center;
@@ -237,7 +237,7 @@
     gap: 10px;
     padding: 5px;
     margin: 10px 0;
-    background: linear-gradient(-90deg, #8a0123 0%, #cf2e2e 100%);
+    background: linear-gradient(-90deg, #2af598 0%, #14c9cb 100%);
     border-radius: 50px;
 }
 
@@ -251,7 +251,7 @@
 }
 
 .voluntCard:hover ul.social li a {
-    color: #8a0123;
+    color: #14c9cb;
 }
 
 .voluntCard ul.social li a i {
@@ -287,7 +287,7 @@
 
 .counter_sec .counterWrap i {
     font-size: 40px;
-    color: #cf2e2e;
+    color: #1bd7bb;
 }
 
 .counter_sec .counterWrap h5 {
@@ -307,8 +307,8 @@
     /* background-image: url(../images/sec_bg-img.jpg); */
     background-repeat: no-repeat;
     background-size: cover;
-    background: url(../images/sec_bg-img.jpg), linear-gradient(-90deg, rgba(251, 115, 4, 0.302) 0%, rgba(209, 46, 46, 0.122) 100%);
-    background-blend-mode: multiply;
+    background: url(../images/sec_bg-img.jpg);
+    /* background-blend-mode: multiply; */
 }
 
 .upcoming_sec .custom_row {
@@ -361,7 +361,7 @@
 }
 
 .eventCard .eventFlex span i {
-    color: #ce2e2e;
+    color: #22e4ac;
 }
 
 .eventCard .desc {
@@ -431,7 +431,7 @@
     position: absolute;
     font-family: var(--fa-style-family,"Font Awesome 6 Free");
     font-weight: var(--fa-style,900);
-    color: #ddd;
+    color: #22e4ad68;
     font-size: 4rem;
     z-index: -1;
     transition: all 0.3s ease-in-out;
@@ -446,7 +446,7 @@
     font-size: 18px;
     font-weight: 500;
     font-family: 'Montserrat';
-    color: #ce2e2e;
+    color: #14c9cb;
 }
 
 

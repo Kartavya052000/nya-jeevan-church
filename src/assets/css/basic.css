@@ -151,7 +151,7 @@
 
   .sec_ttl h2 span {
     color: #fff;
-    background-color: #ce2e2e;
+    background-color: #2af598;
     padding-left: 10px;
   }
 
@@ -165,7 +165,7 @@
     position: absolute;
     height: 10px;
     border-bottom: 2px solid;
-    border-color: #ce2e2e;
+    border-color: #22e4ac;
     top: 0;
     width: 100px;
   }
@@ -181,7 +181,7 @@
   }
 
   .fancy_ttl i {
-    color: #ce2e2e;
+    color: #22e4ac;
   }
 
   .sec_btnWrap {

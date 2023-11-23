@@ -32,7 +32,7 @@ const Contact = () => {
                             fullScreen: {enable: false},
                             background: {
                                 color: {
-                                    value: "#222",
+                                    value: "#fff",
                                 },
                             },
                             fpsLimit: 120,
@@ -60,10 +60,10 @@ const Contact = () => {
                             },
                             particles: {
                                 color: {
-                                    value: "#ffffff",
+                                    value: "#2af598",
                                 },
                                 links: {
-                                    color: "#ffffff",
+                                    color: "#1bd7bb",
                                     distance: 150,
                                     enable: true,
                                     opacity: 0.4,

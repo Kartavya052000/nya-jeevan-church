@@ -8,6 +8,7 @@ import bible from './assets/images/bible.jpg';
 import eventImg from './assets/images/eventimg.jpg';
 import child from './assets/images/poorchild.jpg';
 import childBw from './assets/images/child_bw.jpg';
+import CountUp from 'react-countup';
 
 var heroSlidersettings = {
     dots: true,
@@ -250,28 +251,57 @@ const Home = () => {
                             <div className='counterWrap' data-aos='fade-up' data-aos-duration='1200'>
                                 <i className='fa fa-hand-holding-heart'></i>
                                 <h5>Counter Text Here</h5>
-                                <div className='counterPercentage'>999%</div>
+                                <CountUp className='counterPercentage'
+                                    start="0"
+                                    end="100"
+                                    duration={5}
+                                    enableScrollSpy="true"
+                                    scrollSpyOnce="true"
+                                    suffix='%'
+                                />
+
                             </div>
                         </div>
                         <div className='custom_col-3'>
                             <div className='counterWrap' data-aos='fade-up' data-aos-duration='1200'>
                                 <i className='fa fa-hands-holding-circle'></i>
                                 <h5>Counter Text Here</h5>
-                                <div className='counterPercentage'>999%</div>
+                                <CountUp className='counterPercentage'
+                                    start="0"
+                                    end="100"
+                                    duration={5}
+                                    enableScrollSpy="true"
+                                    scrollSpyOnce="true"
+                                    suffix='%'
+                                />
                             </div>
                         </div>
                         <div className='custom_col-3'>
                             <div className='counterWrap' data-aos='fade-up' data-aos-duration='1200'>
                                 <i className='fa fa-hands-holding-child'></i>
                                 <h5>Counter Text Here</h5>
-                                <div className='counterPercentage'>999%</div>
+                                <CountUp className='counterPercentage'
+                                    start="0"
+                                    end="100"
+                                    duration={5}
+                                    enableScrollSpy="true"
+                                    scrollSpyOnce="true"
+                                    suffix='%'
+                                />
                             </div>
                         </div>
                         <div className='custom_col-3'>
                             <div className='counterWrap' data-aos='fade-up' data-aos-duration='1200'>
                                 <i className='fa fa-hand-holding-dollar'></i>
                                 <h5>Counter Text Here</h5>
-                                <div className='counterPercentage'>999%</div>
+                                <CountUp className='counterPercentage'
+                                    start="0"
+                                    end="100"
+                                    duration={5}
+                                    enableScrollSpy="true"
+                                    scrollSpyOnce="true"
+                                    suffix='%'
+                                />
                             </div>
                         </div>
                     </div>

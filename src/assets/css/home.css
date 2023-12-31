@@ -98,8 +98,8 @@
 }
 
 .hero_slider_sec .slick-slider .slick-dots li.slick-active button {
-    background-color: #2af598;
-    outline-color: #22e4ac;
+    background-color: #b58811;
+    outline-color: #b58811;
     opacity: 1;
 }
 
@@ -140,7 +140,7 @@
 
 .mission_sec .mis_wrap .ic_wrap {
     position: relative;
-    background-color: #1bd7bb;
+    background-color: #b58811;
     border-radius: 50%;
     width: 60px;
     height: 60px;
@@ -159,7 +159,7 @@
 
 .mission_sec .mission_cont .mis_wrap .cont h5 {
     margin: 0 0 10px;
-    color: #1bd7bb;
+    color: #b58811;
     font-family: 'Montserrat';
 }
 
@@ -190,8 +190,8 @@
 }
 
 .voluntCard:hover {
-    background: linear-gradient(-170deg, #2af598 0%, #14c9cb 100%);;
-    box-shadow: 0px 0px 20px #14c9cb;
+    background: linear-gradient(-170deg, #e8c564 0%, #b58811 100%);;
+    box-shadow: 0px 0px 20px #b58811;
 }
 
 .voluntCard .imgTop img {
@@ -218,7 +218,7 @@
 
 .voluntCard span {
     font-size: 12px;
-    color: #14c9cb;
+    color: #b58811;
     margin: 5px 0;
     display: block;
     text-align: center;
@@ -237,7 +237,7 @@
     gap: 10px;
     padding: 5px;
     margin: 10px 0;
-    background: linear-gradient(-90deg, #2af598 0%, #14c9cb 100%);
+    background: linear-gradient(-90deg, #e8c564 0%, #b58811 100%);
     border-radius: 50px;
 }
 
@@ -251,7 +251,7 @@
 }
 
 .voluntCard:hover ul.social li a {
-    color: #14c9cb;
+    color: #b58811;
 }
 
 .voluntCard ul.social li a i {
@@ -287,7 +287,7 @@
 
 .counter_sec .counterWrap i {
     font-size: 40px;
-    color: #1bd7bb;
+    color: #b58811;
 }
 
 .counter_sec .counterWrap h5 {
@@ -361,7 +361,7 @@
 }
 
 .eventCard .eventFlex span i {
-    color: #1bd7bb;
+    color: #b58811;
 }
 
 .eventCard .desc {
@@ -390,7 +390,6 @@
     border-radius: 4px;
     background-color: #fff;
     padding: 1rem;
-    /* margin: 5px 15px 5px 0; */
     transform: scale(0.8);
     transition: all 0.4s ease-in-out;
 }
@@ -431,7 +430,7 @@
     position: absolute;
     font-family: var(--fa-style-family,"Font Awesome 6 Free");
     font-weight: var(--fa-style,900);
-    color: #22e4ad68;
+    color: #b5891167;
     font-size: 4rem;
     z-index: -1;
     transition: all 0.3s ease-in-out;
@@ -446,7 +445,7 @@
     font-size: 18px;
     font-weight: 500;
     font-family: 'Montserrat';
-    color: #14c9cb;
+    color: #b58811;
 }
 
 

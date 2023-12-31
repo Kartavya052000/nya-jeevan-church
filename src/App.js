@@ -11,6 +11,7 @@ import OutreachDetail from "./pages/outreach_detail";
 import MinistryDetail from "./pages/ministryDetail";
 import EventDets from "./pages/eventDetail";
 import Outreach from "./outreach";
+import General from "./pages/generalPage";
 
 function App() {
   return (
@@ -27,6 +28,8 @@ function App() {
           <Route exact path='/pages/outreach_detail' element={<OutreachDetail />} />
           <Route exact path='/ministryDetail' element={<MinistryDetail />} />
           <Route exact path='/eventDetail' element={<EventDets />} />
+
+          <Route exact path='/general' element={<General />} />
         </Routes>
         <Footer />
       </Router>

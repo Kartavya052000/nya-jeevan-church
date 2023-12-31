@@ -53,7 +53,7 @@
     font-size: 15px;
     font-weight: 500;
     margin: 0;
-    color: #1bd7bb;
+    color: #b58811;
     writing-mode: vertical-rl;
     text-orientation: mixed;
     margin-left: auto;
@@ -65,7 +65,7 @@
 }
 
 .mcard_link:hover .ttlCard {
-    background: linear-gradient(45deg, #2af598 0%, #14c9cb 50%);
+    background: linear-gradient(45deg, #e8c564 0%, #b58811 50%);
 }
 
 .mcard_link:hover h5.card_ttl {

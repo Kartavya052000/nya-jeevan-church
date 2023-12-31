@@ -6,18 +6,38 @@ const OutreachDetail = () => {
         <>
 
         <InnerHeader value='Outreach Detail' />
-            <section className='generalPage_sec'>
-                <div className='custom-container'>
-                    <div className='custom-row'>
-                        <div className='custom_col-12'>
-                            <div className='general_cont'>
-                                <h2>Welcome, Detail page</h2>
-                                <p>Lorem Ipsum dolor sit amet.. lorem Ipsum dolor sit amet.. lorem Ipsum dolor sit amet..lorem Ipsum dolor sit amet..</p>
-                            </div>
+
+        <section className='outreach_dets'>
+            <div className='custom-container'>
+                <div className='custom_row'>
+                    <div className='custom_col-4'>
+                        <div className='outreach_card'>
+                            <h4>UnderPrivileged families</h4>
+                        </div>
+                    </div>
+                    <div className='custom_col-4'>
+                        <div className='outreach_card'>
+                            <h4>Build Homes</h4>
+                        </div>
+                    </div>
+                    <div className='custom_col-4'>
+                        <div className='outreach_card'>
+                            <h4>WOWS (Walk on, Walk Strong)</h4>
+                        </div>
+                    </div>
+                    <div className='custom_col-4'>
+                        <div className='outreach_card'>
+                            <h4>Kid's Cancer</h4>
+                        </div>
+                    </div>
+                    <div className='custom_col-4'>
+                        <div className='outreach_card'>
+                            <h4>Night Shift Ministries</h4>
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
         </>
     )
 }

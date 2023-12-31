@@ -60,10 +60,10 @@ const Contact = () => {
                             },
                             particles: {
                                 color: {
-                                    value: "#2af598",
+                                    value: "#b58811",
                                 },
                                 links: {
-                                    color: "#1bd7bb",
+                                    color: "#b58811",
                                     distance: 150,
                                     enable: true,
                                     opacity: 0.4,

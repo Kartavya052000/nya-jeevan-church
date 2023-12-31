@@ -1,0 +1,50 @@
+.outreach_dets {
+    padding: 3rem 0;
+  }
+  
+  .outreach_dets .custom_col-4 {
+    margin: 0 0 30px;
+  }
+  
+  .outreach_card {
+    height: 100%;
+    border-radius: 12px;
+    padding: 12px 20px;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.3);
+  }
+  
+  .custom_col-4:nth-child(odd) .outreach_card {
+    background: linear-gradient(-90deg, #e8c564 0%, #b58811 100%);
+  }
+  
+  .custom_col-4:nth-child(even) .outreach_card {
+    background: linear-gradient(-45deg, #b58811 40%, #e8c564 60%);
+  }
+  
+  .outreach_card h4 {
+    color: #fff;
+    font-weight: 400;
+    text-align: center;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  /** Responsive CSS starts here **/
+  
+  @media (max-width: 991.98px) {
+    .outreach_card {
+      border-radius: 8px;
+      padding: 8px 15px;
+    }
+  
+    .outreach_card h4 {
+      font-size: 15px;
+    }
+  }

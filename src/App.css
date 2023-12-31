@@ -7,6 +7,7 @@
 @import url(assets/css/events.css);
 @import url(assets/css/event_detail.css);
 @import url(assets/css/contact.css);
+@import url(assets/css/outreachdetail.css);
 
 * {
   box-sizing: border-box;
@@ -76,7 +77,7 @@ p {
 }
 
 .mainHeader .logo img {
-  max-width: 130px;
+  max-width: 70px;
 }
 
 .navigationWrapper ul {
@@ -247,7 +248,7 @@ ul.foot_menu li a {
 }
 
 ul.foot_menu li a:hover {
-  color: #22e4ac;
+  color: #b58811;
 }
 
 .footerCol_inner ul.address li {
@@ -261,12 +262,12 @@ ul.foot_menu li a:hover {
 }
 
 .footerCol_inner ul.address li a:hover {
-  color: #14c9cb;
+  color: #b58811;
 }
 
 .footerCol_inner ul.address li i {
   margin-right: 10px;
-  color: #22e4ac;
+  color: #b58811;
 }
 
 .footerCol_inner ul.address li span img {
@@ -291,9 +292,9 @@ ul.social_info li a {
   position: relative;
   width: 30px;
   height: 30px;
-  border: 1px solid #22e4ac;
+  border: 1px solid #b58811;
   border-radius: 50%;
-  color: #22e4ac;
+  color: #b58811;
   display: flex;
   display: -ms-flexbox;
   justify-content: center;
@@ -304,7 +305,7 @@ ul.social_info li a {
 ul.social_info li a span {
   position: absolute;
   top: 30%;
-  background-color: #22e4ac;
+  background-color: #b58811;
   border-radius: 4px;
   font-size: 10px;
   font-weight: 500;
@@ -321,7 +322,7 @@ ul.social_info li a span {
 ul.social_info li a span:after {
   content: '';
   position: absolute;
-  border: 5px solid #22e4ac;
+  border: 5px solid #b58811;
   border-left-color: transparent;
   border-right-color: transparent;
   border-bottom-color: transparent;
@@ -335,7 +336,7 @@ ul.social_info li a img {
 }
 
 ul.social_info li a:hover {
-  box-shadow: 0px 0px 5px 5px #22e4ad62;
+  box-shadow: 0px 0px 5px 5px rgba(241, 198, 80, 0.532);
   border-color: transparent;
 }
 
@@ -347,7 +348,7 @@ ul.social_info li a:hover span {
 
 footer .copyright {
   text-align: center;
-  background: linear-gradient(-90deg, #2af598 0%, #14c9cb 100%);
+  background: linear-gradient(-90deg, #e8c564 0%, #b58811 100%);
   color: #fff;
   padding: 12px 0;
   font-size: 12px;
@@ -376,7 +377,7 @@ footer .copyright img {
 
 @media (min-width: 768px) {
   .navigationWrapper ul li.menu_item span.dropdown_text:hover {
-    background-color: #2cb75c;
+    background-color: #b58811;
   }
 }
 
@@ -395,15 +396,11 @@ footer .copyright img {
   .innerHeaderWrap ul {
     gap: 15px;
   }
-  
-  .mainHeader .logo img {
-      max-width: 125px;
-  }
 
   .navigationWrapper ul li.menu_item span.dropdown_text {
     font-size: 0;
     padding: 6px 8px;
-    border: 1px solid #15843C;
+    border: 1px solid #b58811;
   }
 
   .navigationWrapper ul li.menu_item img {
@@ -454,10 +451,6 @@ footer .copyright img {
 
 @media (max-width: 767.98px) {
 
-  .mainHeader .logo img {
-      max-width: 120px;
-  }
-
   .mainHeader .header_wrap {
       position: relative;
   }
@@ -480,12 +473,12 @@ footer .copyright img {
       padding: 20px;
       height: 250px;
       overflow-y: auto;
-      border-bottom: 4px solid #22e4ac;
+      border-bottom: 4px solid #b58811;
       border-radius: 0 0 15px 15px;
   }
 
   .navigationWrapper ul li.menu_item a {
-    color: #14c9cb;
+    color: #b58811;
   }
 
   .navigationWrapper ul li.menu_item span.dropdown_text {
@@ -516,7 +509,7 @@ footer .copyright img {
       content: '';
       height: 3px;
       position: absolute;
-      background: linear-gradient(-90deg, #2af598 0%, #14c9cb 100%);
+      background: linear-gradient(-90deg, #e8c564 0%, #b58811 100%);
       transition: all 0.2s ease;
   }
 
@@ -642,10 +635,6 @@ footer .copyright img {
     font-size: 12px;
     line-height: 15px;
     padding: 5px;
-  }
-
-  .mainHeader .logo img {
-      max-width: 110px;
   }
 
   .navigationWrapper {

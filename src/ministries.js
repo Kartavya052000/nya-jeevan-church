@@ -72,7 +72,7 @@ const Ministries = () => {
                                 return (
                                     <>
                                         <div className={`custom_col-6 ${active === i ? 'activeCard' : ''}`} key={item.id}>
-                                            <Link className='mcard_link' key={item.id} to='/ministryDetail' key={i} data-aos='fade-up' data-aos-duration='1500'>
+                                            <Link className='mcard_link' key={item.id} to='/ministryDetail' data-aos='fade-up' data-aos-duration='1500'>
                                                 <div className='ministryCard'>
                                                     <img src={item.img} />
                                                     {(active === i ?

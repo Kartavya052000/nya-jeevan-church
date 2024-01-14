@@ -86,18 +86,45 @@
 
 /** Responsive CSS starts here **/
 
+@media (max-width: 991.98px) {
+
+    .ministries_sec {
+        padding: 3rem 0;
+    }
+
+    .ministries_inner {
+        width: 100%;
+    }
+
+    .mcard_link .ttlCard {
+        padding: 10px;
+    }
+
+    .mcard_link h5.card_ttl {
+        font-size: 14px;
+    }
+}
+
 @media (max-width: 767.98px) {
-    .ministryCard {
+
+    .ministries_sec {
+        padding: 2rem 0 0;
+    }
+
+    .ministries_inner .custom_col-6 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .mcard_link {
         min-height: 250px;
+        margin: 0 0 20px;
     }
 }
 
 @media (max-width: 575.98px) {
-    .ministryCard {
-        min-height: 300px;
-    }
-
     .ministryCard .mcard_link {
+        min-height: 200px;
         font-size: 12px;
     }
 }

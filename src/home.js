@@ -24,7 +24,6 @@ var heroSlidersettings = {
 var testimonialsettings = {
     dots: false,
     arrows: false,
-    // infinite: true,
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
@@ -92,6 +91,31 @@ const Home = () => {
             </div>
         </section>
 
+        <section className='church_info_Sec'>
+            <div className='custom-container'>
+                <div className='custom_row'>
+                    <div className='custom_col-4'>
+                        <div className='info'>
+                            <h6>In-Person/ Live Service Start Time</h6>
+                            <p>2:00 PM</p>
+                        </div>
+                    </div>
+                    <div className='custom_col-4'>
+                        <div className='info'>
+                            <h6>Address</h6>
+                            <p>8868 128 St, Surrey, BC V3V 5M7</p>
+                        </div>
+                    </div>
+                    <div className='custom_col-4'>
+                        <div className='info'>
+                            <h6>Email</h6>
+                            <p>nayajeevanchurch@hotmail</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section className='mission_sec'>
             <div className='custom-container'>
                 <div className='sec_ttl' data-aos='fade-up' data-aos-duration='1500'>
@@ -142,7 +166,7 @@ const Home = () => {
             </div>
         </section>
 
-        <section className='volunteer_sec'>
+        {/* <section className='volunteer_sec'>
             <div className='custom-container'>
                 <div className='sec_ttl' data-aos='fade-up' data-aos-duration='1500'>
                     <h2><span>Our</span> Volunteers</h2>
@@ -303,6 +327,32 @@ const Home = () => {
                                     suffix='%'
                                 />
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> */}
+
+        <section className='gallery_sec'>
+            <div className='custom-container'>
+                <div className='sec_ttl' data-aos='fade-up' data-aos-duration='1500'>
+                    <h2><span>G</span>allery</h2>
+                    <span className='fancy_ttl'><i className='fa fa-child-reaching'></i></span>
+                </div>
+                <div className='custom_row'>
+                    <div className='custom_col-4' data-aos='fade-up' data-aos-duration='1500'>
+                        <div className='imgWrap'>
+                            <img src={church} alt='Church' />
+                        </div>
+                    </div>
+                    <div className='custom_col-4' data-aos='fade-up' data-aos-duration='1500'>
+                        <div className='imgWrap'>
+                            <img src={church} alt='Church' />
+                        </div>
+                    </div>
+                    <div className='custom_col-4' data-aos='fade-up' data-aos-duration='1500'>
+                        <div className='imgWrap'>
+                            <img src={church} alt='Church' />
                         </div>
                     </div>
                 </div>

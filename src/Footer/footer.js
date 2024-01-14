@@ -13,7 +13,10 @@ const Footer = () => {
             <div className='footerCol-6'>
               <div className='footerCol_inner'>
                 <h4>About Us</h4>
-                <p>At Nav Jeevan Church, we are dedicated to creating positive change and fostering a brighter future for communities in need. Established with a commitment to service and compassion, our non-profit organization focuses on a range of impactful initiatives aimed at addressing societal challenges.</p>
+                <p>Welcome to Naya Jeevan Church! This is where a vibrant church community, faith, fellowship,
+                    and purpose converge! Since 1995, Naya Jeevan Church has been committed to creating a
+                    welcoming space for all, fostering spiritual growth and embracing diversity.
+                </p>
                 <ul className='social_info'>
                   <li>
                     <a href='#'>
@@ -41,19 +44,19 @@ const Footer = () => {
                   <h4>Quick Links</h4>
                   <ul className='foot_menu'>
                     <li>
-                      <Link to="#" title="Home">Home</Link>
+                      <Link to="/" title="Home">Home</Link>
                     </li>
                     <li>
-                      <Link to="#" title="About">About</Link>
+                      <Link to="/about" title="About">About</Link>
                     </li>
                     <li>
-                      <Link to="#" title="Ministries">Ministries</Link>
+                      <Link to="/ministries" title="Ministries">Ministries</Link>
                     </li>
                     <li>
-                      <Link to="#" title="Events">Events</Link>
+                      <Link to="/gallery" title="Gallery">Gallery</Link>
                     </li>
                     <li>
-                      <Link to="#" title="Contact">Contact</Link>
+                      <Link to="/contact" title="Contact">Contact</Link>
                     </li>
                   </ul>
               </div>

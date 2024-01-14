@@ -26,7 +26,7 @@
 .hero_slider_sec .slidebgOverlay {
     height: 100%;
     width: 100%;
-    background-image: linear-gradient(45deg, rgba(0,0,0,0.9), rgba(10,0,0,0.5));
+    background-image: linear-gradient(45deg, rgba(0,0,0,0.5), rgba(10,0,0,0.5));
     position: absolute;
     z-index: -1;
     height: 100%;
@@ -101,6 +101,32 @@
     background-color: #b58811;
     outline-color: #b58811;
     opacity: 1;
+}
+
+
+/** Church Section CSS **/
+
+.church_info_Sec {
+    background-color: #b58811;
+}
+
+.church_info_Sec .info {
+    padding: 10px 20px;
+    border-right: 1px solid #fff;
+    color: #fff;
+}
+
+.church_info_Sec .custom_col-4:last-child .info {
+    border-right: none;
+}
+
+.church_info_Sec .info h6 {
+    font-size: 14px;
+    margin: 0;
+}
+
+.church_info_Sec .info p {
+    font-size: 12px;
 }
 
 /** Our Mission Section CSS **/
@@ -297,6 +323,25 @@
 
 .counter_sec .counterWrap .counterPercentage {
     font-size: 25px;
+}
+
+
+/** Gallery Section **/
+
+.gallery_sec {
+    padding: 3rem 0;
+}
+
+.gallery_sec .imgWrap {
+    height: 250px;
+    overflow: hidden;
+}
+
+.gallery_sec .imgWrap img {
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+    object-fit: cover;
 }
 
 
@@ -523,6 +568,10 @@
         font-size: 16px;
     }
 
+    .gallery_sec {
+        padding: 2rem 0;
+    }
+
     .upcoming_sec {
         padding: 3rem 0;
     }
@@ -548,6 +597,15 @@
 
     .hero_slider_sec .slideItem .slider_cont p {
         font-size: 14px;
+    }
+
+    .church_info_Sec .info {
+        padding: 8px 15px;
+    }
+
+    .church_info_Sec .info h6 {
+        font-size: 13px;
+        font-weight: 500;
     }
 
     .mission_sec .custom_row {
@@ -584,6 +642,10 @@
         object-position: top;
     }
 
+    .upcoming_sec .butn {
+        width: 8rem;
+    }
+
     .needHelp_sec {
         padding: 3rem 0;
     }
@@ -592,6 +654,33 @@
 @media (max-width: 767.98px) {
     .hero_slider_sec .slideItem .slider_cont {
         padding: 20% 0 5% 0;
+    }
+
+    .church_info_Sec {
+        padding: 1rem 0;
+    }
+
+    .church_info_Sec .custom_col-4 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .church_info_Sec .info {
+        border: none;
+    }
+
+    .church_info_Sec .custom_col-4:first-child .info {
+        border-right: 1px solid #fff;
+        border-bottom: 1px solid #fff;
+    }
+
+    .church_info_Sec .custom_col-4:nth-child(2) .info {
+        border-left: 1px solid #fff;
+        border-bottom: 1px solid #fff;
+    }
+
+    .church_info_Sec .custom_col-4:last-child .info {
+        border-right: 1px solid #fff;
     }
 
     .mission_sec {
@@ -641,6 +730,11 @@
         gap: 10px;
         margin: 8px 0;
         border-radius: 20px;
+    }
+
+    .gallery_sec .imgWrap {
+        height: 200px;
+        margin-bottom: 30px;
     }
 
     .counter_sec {

@@ -24,14 +24,13 @@ const About = () => {
                         </div>
                         <div className='custom_col-6'>
                             <div className='about_cont'>
-                                <p>At Nav Jeevan Church, we are dedicated to creating positive change and fostering a brighter 
-                                    future for communities in need. Established with a commitment to service and compassion, 
-                                    our non-profit organization focuses on a range of impactful initiatives aimed at addressing 
-                                    societal challenges.<br/>
-                                    Join us on our mission to make a positive impact. 
-                                    Nav Jeevan Church welcomes volunteers, donors, and 
-                                    partners who share our vision of a more equitable 
-                                    and compassionate world. Together, we can build a brighter future for all.
+                                <p>Welcome to Naya Jeevan Church! This is where a vibrant church community, faith, fellowship,
+                                    and purpose converge! Since 1995, Naya Jeevan Church has been committed to creating a
+                                    welcoming space for all, fostering spiritual growth and embracing diversity. We would love for
+                                    you to join us in worship, connect with like-minded individuals, and be part of a community
+                                    dedicated to living out the teachings of love, compassion, and service. Together, we journey
+                                    towards a deeper understanding of our faith and make a meaningful impact in our community
+                                    and the world around us!
                                 </p>
                             </div>
                         </div>

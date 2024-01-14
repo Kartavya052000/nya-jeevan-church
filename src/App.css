@@ -367,7 +367,11 @@ footer .copyright img {
 /** Footer CSS ends here **/
 
 
+/** Gallery Page CSS **/
 
+.gallery_Inner .custom_col-4 {
+  padding: 10px;
+}
 
 
 

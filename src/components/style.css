@@ -1,5 +1,5 @@
 .innerPg_header {
-    padding: 100px 0 30px 0;
+    padding: 130px 0 30px 0;
     background-repeat: no-repeat;
     background-size: cover;
     background: url(../assets/images/sec_bg-img.jpg), linear-gradient(45deg, #e8c564 0%, #b58811 50%);
@@ -31,7 +31,7 @@
 @media (max-width: 575.98px) {
 
     .innerPg_header {
-        padding: 85px 0 30px 0;
+        padding: 120px 0 30px 0;
     }
 
     .innerPg_header h2 {

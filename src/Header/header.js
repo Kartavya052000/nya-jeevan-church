@@ -30,19 +30,21 @@ const Header = () => {
                   <li className='menu_item linkEffect'>
                     <Link to="/ministries" title='Ministries'>Ministries</Link>
                   </li>
-                  <li className='menu_item linkEffect dropdown'>
+                  {/* <li className='menu_item linkEffect dropdown'> */}
+                  <li className='menu_item linkEffect'>
                     <Link to="/outreach" title='Outreach'>Outreach</Link>
-                    <ul className='dropdownMain'>
+                    {/* <ul className='dropdownMain'>
                       <li className='linkEffect'>
                         <Link to='/pages/outreach_detail' title='Pakistan'>Pakistan</Link>
                       </li>
                       <li className='linkEffect'>
                         <Link to='/pages/outreach_detail' title='Fiji'>Fiji</Link>
                       </li>
-                    </ul>
+                    </ul> */}
                   </li>
                   <li className='menu_item linkEffect'>
-                    <Link to="/events" title='Events'>Events</Link>
+                    {/* <Link to="/events" title='Events'>Events</Link> */}
+                    <Link to="/gallery" title='Gallery'>Gallery</Link>
                   </li>
                   <li className='menu_item linkEffect'>
                     <Link to="/contact" title='Contact'>Contact</Link>

@@ -12,6 +12,7 @@ import MinistryDetail from "./pages/ministryDetail";
 import EventDets from "./pages/eventDetail";
 import Outreach from "./outreach";
 import General from "./pages/generalPage";
+import Gallery from "./gallery";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route exact path='/ministries' element={<Ministries />} />
           <Route exact path='/outreach' element={<Outreach />} />
           <Route exact path='/events' element={<Events />} />
+          <Route exact path='/gallery' element={<Gallery />} />
           <Route exact path='/contact' element={<Contact/>} />
           <Route exact path='/pages/outreach_detail' element={<OutreachDetail />} />
           <Route exact path='/ministryDetail' element={<MinistryDetail />} />

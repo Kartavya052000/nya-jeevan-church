@@ -66,10 +66,10 @@ const Footer = () => {
                   <h4>Address</h4>
                   <ul className='address'>
                     <li>
-                      <span><img src={location} /> XYZ, Surrey, Canada</span>
+                      <span><img src={location} /> 8868 128 St, Surrey, BC V3V 5M7</span>
                     </li>
                     <li>
-                      <span><img src={mail} /><a href='mailto:info@navjeevanchurch.ca' title='info@navjeevanchurch.ca'>info@navjeevanchurch.ca</a></span>
+                      <span><img src={mail} /><a href='mailto:nayajeevanchurch@hotmail.com' title='nayajeevanchurch@hotmail.com'>nayajeevanchurch@hotmail.com</a></span>
                     </li>
                   </ul>
               </div>

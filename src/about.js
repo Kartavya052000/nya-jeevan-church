@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import InnerHeader from "./components/innerHeader";
-import aboutImg from './assets/images/child_bw.jpg';
+import aboutImg from './assets/images/church-about.jpeg';
 import AOS from "aos";
 import 'aos/dist/aos.css';
 

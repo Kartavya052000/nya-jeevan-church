@@ -8,11 +8,15 @@ import Ministries from "./ministries";
 import Contact from "./contact";
 import Events from "./events";
 import OutreachDetail from "./pages/outreach_detail";
-import MinistryDetail from "./pages/ministryDetail";
+import MinistryDetail from "./pages/MensministryDetail";
 import EventDets from "./pages/eventDetail";
 import Outreach from "./outreach";
 import General from "./pages/generalPage";
 import Gallery from "./gallery";
+import WomensDetails from "./pages/WomensDetails";
+import SeniorDetails from "./pages/SeniorMinsitry";
+import SundaySchool from "./pages/SundaySchool";
+import Nightshift from "./pages/NightShit";
 
 function App() {
   return (
@@ -28,7 +32,12 @@ function App() {
           <Route exact path='/gallery' element={<Gallery />} />
           <Route exact path='/contact' element={<Contact/>} />
           <Route exact path='/pages/outreach_detail' element={<OutreachDetail />} />
-          <Route exact path='/ministryDetail' element={<MinistryDetail />} />
+          <Route exact path='/ministry/mens' element={<MinistryDetail />} />
+          <Route exact path='/ministry/womens' element={<WomensDetails />} />
+          <Route exact path='/ministry/senior' element={<SeniorDetails />} />
+          <Route exact path='/ministry/sundayschool' element={<SundaySchool />} />
+          <Route exact path='/ministry/nightshift' element={<Nightshift />} />
+
           <Route exact path='/eventDetail' element={<EventDets />} />
 
           <Route exact path='/general' element={<General />} />

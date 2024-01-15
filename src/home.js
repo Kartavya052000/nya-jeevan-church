@@ -4,7 +4,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import piggyBank from './assets/images/piggybank.jpg';
 import church from './assets/images/church.jpg';
-import bible from './assets/images/bible.jpg';
+import bible from './assets/images/bible-img.jpeg';
 import eventImg from './assets/images/eventimg.jpg';
 import child from './assets/images/poorchild.jpg';
 import childBw from './assets/images/child_bw.jpg';
@@ -56,8 +56,9 @@ const Home = () => {
                             <div className='slidebgOverlay'></div>
                             <div className='custom-container'>
                                 <div className='slider_cont'>
-                                    <h3 data-aos='fade-up' data-aos-duration='1200'>Help Us with Donate</h3>
-                                    <p data-aos='fade-up' data-aos-duration='1400'>Lorem Ispum dolor sit amet</p>
+                                    {/* <h3 data-aos='fade-up' data-aos-duration='1200'>Help Us with Donate</h3> */}
+                                    <h3 data-aos='fade-up' data-aos-duration='1200'>Join Our Ministries</h3>
+                                    <p data-aos='fade-up' data-aos-duration='1400'>A place to remember</p>
                                     <a href='#' title='Contact Us' className='butn butn_main butn_sm butn_rounded' data-aos='fade-up' data-aos-duration='1600'>Contact Us</a>
                                 </div>
                             </div>
@@ -68,8 +69,9 @@ const Home = () => {
                             <div className='slidebgOverlay'></div>
                             <div className='custom-container'>
                                 <div className='slider_cont'>
-                                    <h3>Caring is Sharing</h3>
-                                    <p>Lorem Ispum dolor sit amet</p>
+                                    {/* <h3>Caring is Sharing</h3> */}
+                                    <h3>Bible Study</h3>
+                                    <p>Understand concepts of life</p>
                                     <a href='#' title='Contact Us' className='butn butn_main butn_sm butn_rounded'>Contact Us</a>
                                 </div>
                             </div>
@@ -80,9 +82,9 @@ const Home = () => {
                             <div className='slidebgOverlay'></div>
                             <div className='custom-container'>
                                 <div className='slider_cont'>
-                                    <h3>Give a Bit. Change a Lot</h3>
-                                    <p>Lorem Ispum dolor sit amet</p>
-                                    <a href='#' title='Contact Us' className='butn butn_main butn_sm butn_rounded'>Contact Us</a>
+                                    <h3>Donate Us</h3>
+                                    <p>Donate for the Society</p>
+                                    <a href='https://buy.stripe.com/test_5kAbLq39w22Y3eg144' title='Donate Us' className='butn butn_main butn_sm butn_rounded'>Donate Us</a>
                                 </div>
                             </div>
                         </div>
@@ -109,7 +111,7 @@ const Home = () => {
                     <div className='custom_col-4'>
                         <div className='info'>
                             <h6>Email</h6>
-                            <p>nayajeevanchurch@hotmail</p>
+                            <p>nayajeevanchurch@hotmail.com</p>
                         </div>
                     </div>
                 </div>
@@ -359,7 +361,7 @@ const Home = () => {
             </div>
         </section>
 
-        <section className='upcoming_sec'>
+        {/* <section className='upcoming_sec'>
             <div className='custom-container'>
                 <div className='sec_ttl' data-aos='fade-up' data-aos-duration='1500'>
                     <h2><span>Upcoming</span> Events</h2>
@@ -447,7 +449,7 @@ const Home = () => {
                     <a href='#' title='View All Events' className='butn butn_main butn_rounded butn_sm'>View All Events</a>
                 </div>
             </div>
-        </section>
+        </section> */}
 
         <section className='testimonial_sec'>
             <div className='custom-container'>

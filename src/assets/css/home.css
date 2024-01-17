@@ -129,6 +129,53 @@
     font-size: 12px;
 }
 
+
+
+/** Ministry Section CSS **/
+
+.minstry_sec {
+    padding: 4rem 0;
+}
+
+.minstry_sec .custom_row {
+    justify-content: center;
+}
+
+.ministryCard {
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+    border-radius: 10px;
+}
+
+.ministryCard img {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px 10px 0 0;
+    filter: grayscale(1);
+    transition: all 0.2s ease;
+}
+
+.ministryCard:hover img {
+    filter: grayscale(0);
+}
+
+.ministryCard h4 {
+    font-size: 16px;
+    font-weight: 500;
+    color: #b58811;
+    margin: 0;
+    padding: 10px 5px;
+    text-align: center;
+}
+
+.ministryCard p {
+    font-size: 13px;
+    padding: 0 15px 20px;
+    text-align: center;
+}
+
+
+
+
 /** Our Mission Section CSS **/
 
 .mission_sec {
@@ -536,6 +583,10 @@
 
 @media (max-width: 1199.98px) {
 
+    .minstry_sec {
+        padding: 4rem 0 3rem;
+    }
+
     .mission_sec {
         padding: 3rem 0 0;
     }
@@ -599,6 +650,15 @@
         font-size: 14px;
     }
 
+    .ministryCard img {
+        height: 150px;
+    }
+
+    .ministryCard p {
+        font-size: 13px;
+        padding: 0 8px 15px;
+    }
+
     .church_info_Sec .info {
         padding: 8px 15px;
     }
@@ -654,6 +714,14 @@
 @media (max-width: 767.98px) {
     .hero_slider_sec .slideItem .slider_cont {
         padding: 20% 0 5% 0;
+    }
+
+    .minstry_sec {
+        padding: 3rem 0 2rem;
+    }
+
+    .minstry_sec .custom_row .custom_col-4 {
+        padding: 10px;
     }
 
     .church_info_Sec {
@@ -770,6 +838,15 @@
         font-size: 1rem;
     }
 
+    .minstry_sec {
+        padding: 2rem 0 1rem;
+    }
+
+    .minstry_sec .custom_row .custom_col-4 {
+        flex: 0 0 60%;
+        max-width: 60%;
+    }
+
     .volunteer_sec .custom_col-3, .counter_sec .custom_col-3 {
         flex: 0 0 100%;
         max-width: 100%;
@@ -799,6 +876,11 @@
 }
 
 @media (max-width: 475.98px) {
+
+    .minstry_sec .custom_row .custom_col-4 {
+        flex: 0 0 90%;
+        max-width: 90%;
+    }
 
     .mission_sec .mission_cont {
         padding: 0;

@@ -9,6 +9,9 @@ import eventImg from './assets/images/eventimg.jpg';
 import child from './assets/images/poorchild.jpg';
 import childBw from './assets/images/child_bw.jpg';
 import CountUp from 'react-countup';
+import mens from './assets/images/menmeeting.jpg';
+import women from './assets/images/women_meeting.jpg';
+import school from './assets/images/sundayschool.jpeg';
 
 var heroSlidersettings = {
     dots: true,
@@ -118,7 +121,39 @@ const Home = () => {
             </div>
         </section>
 
-        <section className='mission_sec'>
+        <section className='minstry_sec'>
+            <div className='custom-container'>
+                <div className='sec_ttl' data-aos='fade-up' data-aos-duration='1500'>
+                    <h2><span>Minis</span>tries</h2>
+                    <span className='fancy_ttl'><i className='fa fa-child-reaching'></i></span>
+                </div>
+                <div className='custom_row'>
+                    <div className='custom_col-4'>
+                        <div className='ministryCard'>
+                            <img src={mens} />
+                            <h4>Men's Ministry</h4>
+                            <p>Empower and uplift each other on one another's spiritual journey through fellowship, shared experiences.</p>
+                        </div>
+                    </div>
+                    <div className='custom_col-4'>
+                        <div className='ministryCard'>
+                            <img src={women} />
+                            <h4>Women's Ministry</h4>
+                            <p>Nurture and celebrate the strength and grace of one another in our vibrant Women's Ministry!</p>
+                        </div>
+                    </div>
+                    <div className='custom_col-4'>
+                        <div className='ministryCard'>
+                            <img src={school} />
+                            <h4>School Ministry</h4>
+                            <p>Through engaging lessons, we guide children on building a strong foundation for their spiritual growth.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        {/* <section className='mission_sec'>
             <div className='custom-container'>
                 <div className='sec_ttl' data-aos='fade-up' data-aos-duration='1500'>
                     <h2><span>Our</span> Mission</h2>
@@ -166,7 +201,7 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-        </section>
+        </section> */}
 
         {/* <section className='volunteer_sec'>
             <div className='custom-container'>

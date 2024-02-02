@@ -2,8 +2,33 @@ import React from "react";
 import InnerHeader from "./components/innerHeader";
 import { Tab, TabList, TabPanel, Tabs } from "react-tabs";
 import './assets/css/outreach.css'; 
-
+import ImageGallery from 'react-image-gallery';
+import 'react-image-gallery/styles/css/image-gallery.css';
 const Outreach = () => {
+    const pakimages = [
+        {
+          original: require("../src/assets/images/pak1.jpeg"),
+        },
+        {
+          original: require("../src/assets/images/pak2.jpeg"),
+        },
+        {
+            original: require("../src/assets/images/pak3.jpeg"),
+
+        },
+      ];
+      const fijiimages = [
+        // {
+        //   original: require("../src/assets/images/wow1.jpeg"),
+        // },
+        {
+          original: require("../src/assets/images/wow2.jpeg"),
+        },
+        // {
+        //     // original: require("../src/assets/images/wow3.jpeg"),
+
+        // },
+      ];
     return (
         <>
             <InnerHeader value='Outreach' />
@@ -18,6 +43,7 @@ const Outreach = () => {
 
                     <TabPanel>
                         <h2>Fiji Missions</h2>
+                        <div className="image-content">
                         <p>“WOWS Kids Foundation is a registered Charitable Organization located in Suva, Fiji Islands and
                             is the only organization in Fiji that works specifically on all child cancer related matters in the
                             country. The organization works in close collaboration with the Ministry of Health and Medical
@@ -34,9 +60,18 @@ const Outreach = () => {
                             How can you help? Click the link below and become a part of changing these beautiful lives!:
                             https://wowskids.org
                         </p>
+                        <ImageGallery
+                         items={fijiimages}
+                         autoPlay={true} // Enable auto sliding
+                         slideInterval={2000} // Set the interval between slides in milliseconds
+                         />
+
+                        </div>
+
                     </TabPanel>
                     <TabPanel>
                         <h2>Pakistan Missions</h2>
+                        <div className="image-content">
                         <p>In addition to supporting WOWS Kids Foundation in Fiji, Naya Jeevan has also been greatly
                         blessed with the opportunity to assist in Pakistan. Naya Jeevan has been privileged to open an
                         Orphanage Center, a NJ Church, a Medical Clinic and a Community Tailoring Center.
@@ -55,6 +90,13 @@ const Outreach = () => {
                         Want to help? Contact Us to find out how you can be a part of this positive and amazing
                         change!
                         </p>
+                        <ImageGallery 
+                        items={pakimages}
+                        autoPlay={true} // Enable auto sliding
+                        slideInterval={2000} // Set the interval between slides in milliseconds
+                        />
+
+                        </div>
                     </TabPanel>
                 </Tabs>
                 </div>

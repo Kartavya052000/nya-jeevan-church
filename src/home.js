@@ -4,11 +4,14 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import piggyBank from './assets/images/piggybank.jpg';
 import church from './assets/images/church.jpg';
+import gallery1 from "./assets/images/gallery1.jpeg"
+import gallery2 from "./assets/images/gallery2.jpeg"
 import bible from './assets/images/bible-img.jpeg';
 import eventImg from './assets/images/eventimg.jpg';
 import child from './assets/images/poorchild.jpg';
 import childBw from './assets/images/child_bw.jpg';
 import CountUp from 'react-countup';
+import banner1 from "./assets/images/home_page_ministries.jpeg"
 import mens from './assets/images/menmeeting.jpg';
 import women from './assets/images/women_meeting.jpg';
 import school from './assets/images/sundayschool.jpeg';
@@ -55,7 +58,7 @@ const Home = () => {
             <div className='slider_inner'>
                 <Slider {...heroSlidersettings}>
                     <div>
-                        <div className='slideItem' style={{backgroundImage: `url(${church})`}}>
+                        <div className='slideItem' style={{backgroundImage: `url(${banner1})`}}>
                             <div className='slidebgOverlay'></div>
                             <div className='custom-container'>
                                 <div className='slider_cont'>
@@ -139,7 +142,7 @@ const Home = () => {
                         <div className='ministryCard'>
                             <img src={women} />
                             <h4>Women's Ministry</h4>
-                            <p>Nurture and celebrate the strength and grace of one another in our vibrant Women's Ministry!</p>
+                            <p>Nurture and celebrate the strength and grace of one another in our vibrant Women's Ministry together.</p>
                         </div>
                     </div>
                     <div className='custom_col-4'>
@@ -379,12 +382,12 @@ const Home = () => {
                 <div className='custom_row'>
                     <div className='custom_col-4' data-aos='fade-up' data-aos-duration='1500'>
                         <div className='imgWrap'>
-                            <img src={church} alt='Church' />
+                            <img src={gallery1} alt='Church' />
                         </div>
                     </div>
                     <div className='custom_col-4' data-aos='fade-up' data-aos-duration='1500'>
                         <div className='imgWrap'>
-                            <img src={church} alt='Church' />
+                            <img src={gallery2} alt='Church' />
                         </div>
                     </div>
                     <div className='custom_col-4' data-aos='fade-up' data-aos-duration='1500'>
@@ -549,11 +552,7 @@ const Home = () => {
                     <div className='cont'>
                         Our Charity helps those who have no hope.
                         <br /><br/>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                         Ut enim ad minim veniamLorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                         Ut enim ad minim veniam
+                        Your generous donations make a significant impact in our community, providing essential support to those in need. With your contributions, we can continue our mission to uplift and empower individuals, ensuring that no one is left behind. Together, we create positive change and build a brighter future for all
                     </div>
                     <a href='#' title='Learn more' className='butn butn_main butn_rounded butn_sm'>Learn more</a>
                 </div>

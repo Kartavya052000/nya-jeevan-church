@@ -373,7 +373,21 @@ footer .copyright img {
   padding: 10px;
 }
 
-
+/* Outreach Image */
+.image-gallery{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+.image-content{
+  display: flex;
+justify-content: center;
+align-items: center;
+}
+.image-content p {
+  width: 50%;
+}
 
 
 

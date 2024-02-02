@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import InnerHeader from "./components/innerHeader";
+import gallery1 from "./assets/images/gallery1.jpeg"
 import poor from './assets/images/poor.jpg';
 import menMeet from './assets/images/menmeeting.jpg';
 import womenMeet from './assets/images/women_meeting.jpg';
@@ -27,7 +28,7 @@ const Gallery = () => {
                         <div className='custom_row'>
                             <div className='custom_col-4' data-aos='fade-up' data-aos-duration='1500'>
                                 <div className='imgWrap'>
-                                    <img src={poor} alt='Poor' />
+                                    <img src={gallery1} alt='Poor' />
                                 </div>
                             </div>
                             <div className='custom_col-4' data-aos='fade-up' data-aos-duration='1500'>

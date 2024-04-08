@@ -17,6 +17,8 @@ import WomensDetails from "./pages/WomensDetails";
 import SeniorDetails from "./pages/SeniorMinsitry";
 import SundaySchool from "./pages/SundaySchool";
 import Nightshift from "./pages/NightShit";
+import BibleStudy from "./pages/BibleStudy";
+import Donation from "./pages/Donation";
 
 function App() {
   return (
@@ -37,6 +39,8 @@ function App() {
           <Route exact path='/ministry/senior' element={<SeniorDetails />} />
           <Route exact path='/ministry/sundayschool' element={<SundaySchool />} />
           <Route exact path='/ministry/nightshift' element={<Nightshift />} />
+          <Route exact path='/ministry/bible-study' element={<BibleStudy />} />
+          <Route exact path='/donation' element={<Donation />} />
 
           <Route exact path='/eventDetail' element={<EventDets />} />
 

@@ -26,7 +26,7 @@
 .hero_slider_sec .slidebgOverlay {
     height: 100%;
     width: 100%;
-    background-image: linear-gradient(45deg, rgba(0,0,0,0.5), rgba(10,0,0,0.5));
+    background-image: linear-gradient(45deg, rgba(0,0,0,0.3), rgba(10,0,0,0.3));
     position: absolute;
     z-index: -1;
     height: 100%;
@@ -36,12 +36,13 @@
 }
 
 .hero_slider_sec .slideItem .slider_cont {
-    padding: 10% 0 8% 0;
+    padding: 10% 0 2% 0;
     display: flex;
     display: -ms-flexbox;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: center;
+    /* justify-content: center; */
+    justify-content: flex-end;
     position: relative;
     z-index: 1;
 }
@@ -152,10 +153,12 @@
     border-radius: 10px 10px 0 0;
     filter: grayscale(1);
     transition: all 0.2s ease;
+    object-fit: cover;
 }
 
 .ministryCard:hover img {
     filter: grayscale(0);
+    cursor: pointer;
 }
 
 .ministryCard h4 {
@@ -383,7 +386,9 @@
     height: 250px;
     overflow: hidden;
 }
-
+.gallery_sec .imgWrap :hover {
+    cursor: pointer;
+}
 .gallery_sec .imgWrap img {
     width: 100%;
     height: 100%;
@@ -843,8 +848,8 @@
     }
 
     .minstry_sec .custom_row .custom_col-4 {
-        flex: 0 0 60%;
-        max-width: 60%;
+        /* flex: 0 0 60%; */
+        /* max-width: 60%; */
     }
 
     .volunteer_sec .custom_col-3, .counter_sec .custom_col-3 {
@@ -873,6 +878,44 @@
     .testimonial_sec .testi_cont {
         font-size: 13px;
     }
+
+    /* // church info section */
+    .church_info_Sec {
+        padding:0;
+    }
+    .church_info_Sec .custom-container{
+padding-right: 0;
+padding-left: 10px;
+    }
+    .church_info_Sec .custom_row{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0;
+        border: 1px solid white;
+    }
+    .church_info_Sec .last_email{
+        grid-column: 1/-1;
+        text-align: center;
+        border-top: 1px solid white;
+    }
+    .church_info_Sec .custom_col-4:last-child .info {
+        border-right: none;
+    }
+    .church_info_Sec .custom_col-4:first-child .info {
+        border-right: none;
+        border-bottom: none;
+    }
+.church_info_Sec .custom_col-4:nth-child(2) .info {
+    border-bottom: none;
+    border-left: none;
+}
+.church_info_Sec .info {
+    padding: 5px;
+}
+.church_info_Sec .custom_col-4 {
+padding: 0;
+border-right: 1px solid white;
+}
 }
 
 @media (max-width: 475.98px) {

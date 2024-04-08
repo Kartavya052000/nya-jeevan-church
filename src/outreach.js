@@ -32,7 +32,6 @@ const Outreach = () => {
     return (
         <>
             <InnerHeader value='Outreach' />
-
             <section className='outreach_sec'>
                 <div className='custom-container'>
                 <Tabs>
@@ -93,7 +92,7 @@ const Outreach = () => {
                         <ImageGallery 
                         items={pakimages}
                         autoPlay={true} // Enable auto sliding
-                        slideInterval={2000} // Set the interval between slides in milliseconds
+                        slideInterval={4000} // Set the interval between slides in milliseconds
                         />
 
                         </div>

@@ -58,7 +58,12 @@
     line-height: 1.6;
     font-size: 14px;
 }
-
+.detail_cont{
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem;
+    
+}
 
 
 

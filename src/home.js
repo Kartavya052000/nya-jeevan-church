@@ -1,162 +1,228 @@
-import React, { useEffect } from 'react';
-import Slider from 'react-slick';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-import piggyBank from './assets/images/piggybank.jpg';
-import church from './assets/images/church.jpg';
-import gallery1 from "./assets/images/gallery1.jpeg"
-import gallery2 from "./assets/images/gallery2.jpeg"
-import bible from './assets/images/bible-img.jpeg';
-import eventImg from './assets/images/eventimg.jpg';
-import child from './assets/images/poorchild.jpg';
-import childBw from './assets/images/child_bw.jpg';
-import CountUp from 'react-countup';
-import banner1 from "./assets/images/home_page_ministries.jpeg"
-import mens from './assets/images/menmeeting.jpg';
-import women from './assets/images/women_meeting.jpg';
-import school from './assets/images/sundayschool.jpeg';
+import React, { useEffect } from "react";
+import Slider from "react-slick";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import piggyBank from "./assets/images/piggybank.jpg";
+import church from "./assets/images/night-ministry/n4.jpg";
+import gallery1 from "./assets/images/gallery1.jpeg";
+import gallery2 from "./assets/images/gallery2.jpeg";
+import bible from "./assets/images/bible-img.jpeg";
+import eventImg from "./assets/images/eventimg.jpg";
+import child from "./assets/images/poorchild.jpg";
+import childBw from "./assets/images/child_bw.jpg";
+import CountUp from "react-countup";
+import banner1 from "./assets/images/home_page_ministries.jpeg";
+import mens from "./assets/images/MENS-FELLOWSHIP1.jpg";
+import women from "./assets/images/womensMinistry.jpeg";
+import school from "./assets/images/KIDS2.jpg";
+import { useNavigate } from "react-router-dom"; // Import useHistory hook
 
 var heroSlidersettings = {
-    dots: true,
-    arrows: false,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 2000
+  dots: true,
+  arrows: false,
+  infinite: true,
+  speed: 500,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  // autoplay: true,
+  // autoplaySpeed: 2000,
 };
 
 var testimonialsettings = {
-    dots: false,
-    arrows: false,
-    speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 2000,
-    centerMode: true,
-    centerPadding: '20px',
-    responsive: [
-        {
-          breakpoint: 992,
-          settings: {
-            slidesToShow: 1
-          }
-        }
-    ]
+  dots: false,
+  arrows: false,
+  speed: 500,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 2000,
+  centerMode: true,
+  centerPadding: "20px",
+  responsive: [
+    {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 1,
+      },
+    },
+  ],
 };
 
 const Home = () => {
+  const navigate = useNavigate(); // Initialize useHistory hook
 
-    useEffect(() => {
-        AOS.init({once: true});
-    }, [])
-    return(
-        <>
-        <section className='hero_slider_sec'>
-            <div className='slider_inner'>
-                <Slider {...heroSlidersettings}>
-                    <div>
-                        <div className='slideItem' style={{backgroundImage: `url(${banner1})`}}>
-                            <div className='slidebgOverlay'></div>
-                            <div className='custom-container'>
-                                <div className='slider_cont'>
-                                    {/* <h3 data-aos='fade-up' data-aos-duration='1200'>Help Us with Donate</h3> */}
-                                    <h3 data-aos='fade-up' data-aos-duration='1200'>Join Our Ministries</h3>
-                                    <p data-aos='fade-up' data-aos-duration='1400'>A place to remember</p>
-                                    <a href='#' title='Contact Us' className='butn butn_main butn_sm butn_rounded' data-aos='fade-up' data-aos-duration='1600'>Contact Us</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div className='slideItem' style={{backgroundImage: `url(${bible})`}}>
-                            <div className='slidebgOverlay'></div>
-                            <div className='custom-container'>
-                                <div className='slider_cont'>
-                                    {/* <h3>Caring is Sharing</h3> */}
-                                    <h3>Bible Study</h3>
-                                    <p>Understand concepts of life</p>
-                                    <a href='#' title='Contact Us' className='butn butn_main butn_sm butn_rounded'>Contact Us</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div className='slideItem' style={{backgroundImage: `url(${piggyBank})`}}>
-                            <div className='slidebgOverlay'></div>
-                            <div className='custom-container'>
-                                <div className='slider_cont'>
-                                    <h3>Donate Us</h3>
-                                    <p>Donate for the Society</p>
-                                    <a href='https://buy.stripe.com/test_5kAbLq39w22Y3eg144' title='Donate Us' className='butn butn_main butn_sm butn_rounded'>Donate Us</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </Slider>
-            </div>
-        </section>
-
-        <section className='church_info_Sec'>
-            <div className='custom-container'>
-                <div className='custom_row'>
-                    <div className='custom_col-4'>
-                        <div className='info'>
-                            <h6>In-Person/ Live Service Start Time</h6>
-                            <p>2:00 PM</p>
-                        </div>
-                    </div>
-                    <div className='custom_col-4'>
-                        <div className='info'>
-                            <h6>Address</h6>
-                            <p>8868 128 St, Surrey, BC V3V 5M7</p>
-                        </div>
-                    </div>
-                    <div className='custom_col-4'>
-                        <div className='info'>
-                            <h6>Email</h6>
-                            <p>nayajeevanchurch@hotmail.com</p>
-                        </div>
-                    </div>
+  useEffect(() => {
+    AOS.init({ once: true });
+  }, []);
+  const redirectToMinistriesHuman = (type) => {
+    if (type == "men") {
+      navigate("/ministry/mens"); // Redirect to '/ministries/human' route
+    } else if (type == "women") {
+      navigate("/ministry/womens"); // Redirect to '/ministries/human' route
+    } else {
+      navigate("/ministry/sundayschool"); // Redirect to '/ministries/human' route
+    }
+    window.scrollTo(0, 0);
+  };
+  return (
+    <>
+      <section className="hero_slider_sec">
+        <div className="slider_inner">
+          <Slider {...heroSlidersettings}>
+            <div>
+              <div
+                className="slideItem"
+                style={{ backgroundImage: `url(${banner1})` }}
+              >
+                <div className="slidebgOverlay"></div>
+                <div className="custom-container">
+                  <div className="slider_cont">
+                    {/* <h3 data-aos='fade-up' data-aos-duration='1200'>Help Us with Donate</h3> */}
+                    <h3 data-aos="fade-up" data-aos-duration="1200">
+                      Join Our Ministries
+                    </h3>
+                    <p data-aos="fade-up" data-aos-duration="1400">
+                      A place to remember
+                    </p>
+                    <a
+                      href="/ministries"
+                      title="Contact Us"
+                      className="butn butn_main butn_sm butn_rounded"
+                      data-aos="fade-up"
+                      data-aos-duration="1600"
+                    >
+                      View More
+                    </a>
+                  </div>
                 </div>
+              </div>
             </div>
-        </section>
-
-        <section className='minstry_sec'>
-            <div className='custom-container'>
-                <div className='sec_ttl' data-aos='fade-up' data-aos-duration='1500'>
-                    <h2><span>Minis</span>tries</h2>
-                    <span className='fancy_ttl'><i className='fa fa-child-reaching'></i></span>
+            <div>
+              {/* <div
+                className="slideItem"
+                style={{ backgroundImage: `url(${bible})` }}
+              >
+                <div className="slidebgOverlay"></div>
+                <div className="custom-container">
+                  <div className="slider_cont">
+                    <h3>Bible Study</h3>
+                    <p>Understand concepts of life</p>
+                    <a
+                      href="#"
+                      title="Contact Us"
+                      className="butn butn_main butn_sm butn_rounded"
+                    >
+                      Contact Us
+                    </a>
+                  </div>
                 </div>
-                <div className='custom_row'>
-                    <div className='custom_col-4'>
-                        <div className='ministryCard'>
-                            <img src={mens} />
-                            <h4>Men's Ministry</h4>
-                            <p>Empower and uplift each other on one another's spiritual journey through fellowship, shared experiences.</p>
-                        </div>
-                    </div>
-                    <div className='custom_col-4'>
-                        <div className='ministryCard'>
-                            <img src={women} />
-                            <h4>Women's Ministry</h4>
-                            <p>Nurture and celebrate the strength and grace of one another in our vibrant Women's Ministry together.</p>
-                        </div>
-                    </div>
-                    <div className='custom_col-4'>
-                        <div className='ministryCard'>
-                            <img src={school} />
-                            <h4>School Ministry</h4>
-                            <p>Through engaging lessons, we guide children on building a strong foundation for their spiritual growth.</p>
-                        </div>
-                    </div>
-                </div>
+              </div> */}
             </div>
-        </section>
+            {/* <div>
+              <div
+                className="slideItem"
+                style={{ backgroundImage: `url(${piggyBank})` }}
+              >
+                <div className="slidebgOverlay"></div>
+                <div className="custom-container">
+                  <div className="slider_cont">
+                    <h3>Donate Us</h3>
+                    <p>Donate for the Society</p>
+                    <a
+                      href="https://buy.stripe.com/7sI15U15L0hA5Y4144"
+                      title="Donate Us"
+                      className="butn butn_main butn_sm butn_rounded"
+                    >
+                      Donate Us
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div> */}
+          </Slider>
+        </div>
+      </section>
 
-        {/* <section className='mission_sec'>
+      <section className="church_info_Sec">
+        <div className="custom-container">
+          <div className="custom_row">
+            <div className="custom_col-4">
+              <div className="info">
+                <h6>In-Person/ Live Service Start Time</h6>
+                <p>2:00 PM</p>
+              </div>
+            </div>
+            <div className="custom_col-4">
+              <div className="info">
+                <h6>Address</h6>
+                <p>8868 128 St, Surrey, BC V3V 5M7</p>
+              </div>
+            </div>
+            <div className="custom_col-4 last_email">
+              <div className="info">
+                <h6>Email</h6>
+                <p>nayajeevanchurch@hotmail.com</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="minstry_sec">
+        <div className="custom-container">
+          <div className="sec_ttl" data-aos="fade-up" data-aos-duration="1500">
+            <h2>
+              <span>Minis</span>tries
+            </h2>
+            <span className="fancy_ttl">
+              <i className="fa fa-child-reaching"></i>
+            </span>
+          </div>
+          <div className="custom_row">
+            <div
+              className="custom_col-4"
+              onClick={() => redirectToMinistriesHuman("men")}
+            >
+              <div className="ministryCard">
+                <img src={mens} />
+                <h4>Men's Ministry</h4>
+                <p>
+                  Empower and uplift each other on one another's spiritual
+                  journey through fellowship, shared experiences.
+                </p>
+              </div>
+            </div>
+            <div
+              className="custom_col-4"
+              onClick={() => redirectToMinistriesHuman("women")}
+            >
+              <div className="ministryCard">
+                <img src={women} />
+                <h4>Women's Ministry</h4>
+                <p>
+                  Nurture and celebrate the strength and grace of one another in
+                  our vibrant Women's Ministry together.
+                </p>
+              </div>
+            </div>
+            <div
+              className="custom_col-4"
+              onClick={() => redirectToMinistriesHuman("school")}
+            >
+              <div className="ministryCard">
+                <img src={school} />
+                <h4>Sunday School Ministry</h4>
+                <p>
+                  Through engaging lessons, we guide children on building a
+                  strong foundation for their spiritual growth.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* <section className='mission_sec'>
             <div className='custom-container'>
                 <div className='sec_ttl' data-aos='fade-up' data-aos-duration='1500'>
                     <h2><span>Our</span> Mission</h2>
@@ -206,7 +272,7 @@ const Home = () => {
             </div>
         </section> */}
 
-        {/* <section className='volunteer_sec'>
+      {/* <section className='volunteer_sec'>
             <div className='custom-container'>
                 <div className='sec_ttl' data-aos='fade-up' data-aos-duration='1500'>
                     <h2><span>Our</span> Volunteers</h2>
@@ -373,33 +439,63 @@ const Home = () => {
             </div>
         </section> */}
 
-        <section className='gallery_sec'>
-            <div className='custom-container'>
-                <div className='sec_ttl' data-aos='fade-up' data-aos-duration='1500'>
-                    <h2><span>G</span>allery</h2>
-                    <span className='fancy_ttl'><i className='fa fa-child-reaching'></i></span>
-                </div>
-                <div className='custom_row'>
-                    <div className='custom_col-4' data-aos='fade-up' data-aos-duration='1500'>
-                        <div className='imgWrap'>
-                            <img src={gallery1} alt='Church' />
-                        </div>
-                    </div>
-                    <div className='custom_col-4' data-aos='fade-up' data-aos-duration='1500'>
-                        <div className='imgWrap'>
-                            <img src={gallery2} alt='Church' />
-                        </div>
-                    </div>
-                    <div className='custom_col-4' data-aos='fade-up' data-aos-duration='1500'>
-                        <div className='imgWrap'>
-                            <img src={church} alt='Church' />
-                        </div>
-                    </div>
-                </div>
+      <section className="gallery_sec">
+        <div className="custom-container">
+          <div className="sec_ttl" data-aos="fade-up" data-aos-duration="1500">
+            <h2>
+              <span>G</span>allery
+            </h2>
+            <span className="fancy_ttl">
+              <i className="fa fa-child-reaching"></i>
+            </span>
+          </div>
+          <div className="custom_row">
+            <div
+              className="custom_col-4"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              onClick={() => {
+                navigate("/gallery");
+                window.scrollTo(0, 0);
+              }}
+            >
+              <div className="imgWrap">
+                <img src={gallery1} alt="Church" />
+              </div>
             </div>
-        </section>
+            <div
+              className="custom_col-4"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              onClick={() => {
+                navigate("/gallery");
+                window.scrollTo(0, 0);
+              }}
+            >
+              {" "}
+              <div className="imgWrap">
+                <img src={gallery2} alt="Church" />
+              </div>
+            </div>
+            <div
+              className="custom_col-4"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              onClick={() => {
+                navigate("/gallery");
+                window.scrollTo(0, 0);
+              }}
+            >
+              {" "}
+              <div className="imgWrap">
+                <img src={church} alt="Church" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-        {/* <section className='upcoming_sec'>
+      {/* <section className='upcoming_sec'>
             <div className='custom-container'>
                 <div className='sec_ttl' data-aos='fade-up' data-aos-duration='1500'>
                     <h2><span>Upcoming</span> Events</h2>
@@ -489,7 +585,7 @@ const Home = () => {
             </div>
         </section> */}
 
-        <section className='testimonial_sec'>
+      {/* <section className='testimonial_sec'>
             <div className='custom-container'>
                 <div className='sec_ttl' data-aos='fade-up' data-aos-duration='1500'>
                     <h2>What Our <span>Donator</span> Says</h2>
@@ -543,23 +639,38 @@ const Home = () => {
                 </div>
             </div>
 
-        </section>
+        </section> */}
 
-        <section className='needHelp_sec'>
-            <div className='custom-container'>
-                <div className='needHelp_inner' data-aos='fade-up' data-aos-duration='1500'>
-                    <h3>We Need Your Help</h3>
-                    <div className='cont'>
-                        Our Charity helps those who have no hope.
-                        <br /><br/>
-                        Your generous donations make a significant impact in our community, providing essential support to those in need. With your contributions, we can continue our mission to uplift and empower individuals, ensuring that no one is left behind. Together, we create positive change and build a brighter future for all
-                    </div>
-                    <a href='#' title='Learn more' className='butn butn_main butn_rounded butn_sm'>Learn more</a>
-                </div>
+      <section className="needHelp_sec">
+        <div className="custom-container">
+          <div
+            className="needHelp_inner"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+          >
+            <h3>We Need Your Help</h3>
+            <div className="cont">
+              Our Charity helps those who have no hope.
+              <br />
+              <br />
+              Your generous donations make a significant impact in our
+              community, providing essential support to those in need. With your
+              contributions, we can continue our mission to uplift and empower
+              individuals, ensuring that no one is left behind. Together, we
+              create positive change and build a brighter future for all
             </div>
-        </section>
-        </>
-    )
-}
+            <a
+              href="#"
+              title="Learn more"
+              className="butn butn_main butn_rounded butn_sm"
+            >
+              Learn more
+            </a>
+          </div>
+        </div>
+      </section>
+    </>
+  );
+};
 
 export default Home;

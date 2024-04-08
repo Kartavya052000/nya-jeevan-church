@@ -15,8 +15,12 @@ const Header = () => {
                 <img src={logo} alt='NGO' title='NGO' />
               </a>
             </div>
-            <div className='hamburger' onClick={() => setActive(!active)}>
+            <div className='wrapper_donate_ham'>
+            <Link className='butn butn_main' to="https://buy.stripe.com/7sI15U15L0hA5Y4144" target='_blank' title='Donate'>Donate</Link>  
+
+                      <div className='hamburger' onClick={() => setActive(!active)}>
               <span className='bar'></span>
+            </div>
             </div>
             <div className='navigationWrapper'>
               <nav>
@@ -50,7 +54,8 @@ const Header = () => {
                     <Link to="/contact" title='Contact'>Contact</Link>
                   </li>
                   <li className='menu_item'>
-                    <Link className='butn butn_main' to="https://buy.stripe.com/test_5kAbLq39w22Y3eg144" target='_blank' title='Donate'>Donate</Link>                  </li>
+                    {/* <Link className='butn butn_main' to="https://buy.stripe.com/test_5kAbLq39w22Y3eg144" target='_blank' title='Donate'>Donate</Link>                  </li> */}
+                    <Link className='butn butn_main' to="/donation"  title='Donate'>Donate</Link>                  </li>
                 </ul>
               </nav>
             </div>

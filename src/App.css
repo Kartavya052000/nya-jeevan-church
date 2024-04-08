@@ -135,7 +135,9 @@ p {
 .hamburger {
   display: none;
 }
-
+.wrapper_donate_ham{
+  display: none;
+}
 .navigationWrapper ul li.menu_item .dropdown {
   margin: 0;
   position: relative;
@@ -388,7 +390,30 @@ align-items: center;
 .image-content p {
   width: 50%;
 }
+body .css-ahj2mt-MuiTypography-root{
+  font-family: 'Montserrat';
+  font-weight: 800;
+}
+.donation__content{
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem;
+}
+ .css-1086bdv-MuiPaper-root-MuiAccordion-root{
+  background-color: #dbad35 !;
+}
+.donate-parent .custom-container{
+  width: 50%;
+}
+.css-eqpfi5-MuiAccordionSummary-content{
+  justify-content: space-between;
+}
 
+
+/* //gallery section */
+.gallery .react-tabs ul.react-tabs__tab-list {
+justify-content: center;
+}
 
 
 /** Responsive CSS starts here **/
@@ -414,7 +439,12 @@ align-items: center;
   .innerHeaderWrap ul {
     gap: 15px;
   }
-
+  .image-content {
+    flex-direction: column;
+  }
+  .image-content p {
+    width: 100%;
+  }
   .navigationWrapper ul li.menu_item span.dropdown_text {
     font-size: 0;
     padding: 6px 8px;
@@ -472,7 +502,12 @@ align-items: center;
   .mainHeader .header_wrap {
       position: relative;
   }
-
+.image-content {
+  flex-direction: column;
+}
+.image-content p {
+  width: 100%;
+}
   .navigationWrapper {
       margin: 0;
       position: absolute;
@@ -515,6 +550,10 @@ align-items: center;
     cursor: pointer;
     width: 40px;
     height: 20px;
+}
+.wrapper_donate_ham{
+  display: flex;
+  gap: 1rem;
 }
 
   .hamburger span.bar {

@@ -79,7 +79,7 @@ const Footer = () => {
       </section>
       <div className='copyright'>
         <div className='custom-container'>
-          <span>&copy; {new Date().getFullYear()} by Nav jeevan Church</span>
+          <span>&copy; {new Date().getFullYear()} by Naya Jeevan Church</span>
         </div>
       </div>
     </footer>

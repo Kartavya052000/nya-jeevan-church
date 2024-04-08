@@ -1,6 +1,6 @@
 import React from "react";
 import InnerHeader from "../components/innerHeader";
-import aboutImg from '../assets/images/women_meeting.jpg';
+import aboutImg from '../assets/images/womens-ministry.jpg';
 import AOS from "aos";
 import 'aos/dist/aos.css';
 

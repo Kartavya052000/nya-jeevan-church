@@ -1,6 +1,6 @@
 import React from "react";
 import InnerHeader from "../components/innerHeader";
-import aboutImg from '../assets/images/sundayschool.jpeg';
+import aboutImg from '../assets/images/KIDS2.jpg';
 import AOS from "aos";
 import 'aos/dist/aos.css';
 

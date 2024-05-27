@@ -2,7 +2,6 @@ import React, { useEffect } from "react";
 import Slider from "react-slick";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import piggyBank from "./assets/images/piggybank.jpg";
 import church from "./assets/images/night-ministry/n4.jpg";
 import gallery1 from "./assets/images/gallery1.jpeg";
 import gallery2 from "./assets/images/gallery2.jpeg";
